@@ -168,6 +168,7 @@ h1 {
   border-radius: 20px;
   box-shadow: 2px 3px;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-size: 24px;
@@ -177,7 +178,11 @@ h1 {
 }
 
 .secondary-box ul {
-  border: 1px solid red;
+  list-style-type: none;
+}
+
+#boxid {
+  margin: 15px 0px;
 }
 
 .inline {
