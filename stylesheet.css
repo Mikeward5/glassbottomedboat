@@ -18,6 +18,16 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "bebas_neueregular";
+  src: url("./fonts/webfontkit-20241106-064725/bebasneue-regular-webfont.woff2")
+      format("woff2"),
+    url("./fonts/webfontkit-20241106-064725/bebasneue-regular-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
   margin: 0px;
@@ -77,7 +87,7 @@ header li a:hover {
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
-  height: 800px;
+  height: 660px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -86,21 +96,82 @@ header li a:hover {
 .overlay-box {
   width: 420px;
   height: 520px;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(0, 0, 0, 0.5);
   margin-left: 100px;
-}
-
-#text {
-  font-size: 64px;
-  color: rgba(0, 0, 0, 1);
 }
 
 .type1 {
   font-family: oooh_babyregular;
+  font-size: 64px;
+  color: rgba(255, 255, 255, 1);
+  margin-top: 25px;
+  margin-left: 25px;
 }
 
 .type2 {
-  font-family: robotobold;
+  font-family: bebas_neueregular;
+  font-size: 64px;
+  color: rgba(255, 255, 255, 1);
+  line-height: 70px;
+  margin-top: 10px;
+  margin-left: 25px;
+  width: 230px;
+}
+
+.type3 {
+  color: rgba(255, 255, 255, 1);
+  font-family: Nunito Sans;
+  font-size: 24px;
+  margin-top: 15px;
+  margin-left: 25px;
+  width: 300px;
+}
+
+.bubbles {
+  position: absolute;
+  display: block;
+  right: 0;
+  bottom: 175px;
+}
+
+.book-now {
+  background-color: #ff6000;
+  border-radius: 10px;
+  box-shadow: 2px 3px;
+  height: 35px;
+  width: 140px;
+  margin-left: 128px;
+  margin-top: 30px;
+}
+
+.book-now a {
+  color: white;
+  text-decoration: none;
+  font-family: Nunito Sans;
+  font-size: 16px;
+}
+
+.secondary-hero {
+  display: flexbox;
+  justify-items: center;
+}
+
+h1 {
+  font-size: 64px;
+  font-family: bebas_neueregular;
+  text-align: center;
+  padding: 10px;
+}
+
+.secondary-box {
+  width: 900px;
+  height: 500px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.inline {
+  display: flex;
 }
 
 footer {
