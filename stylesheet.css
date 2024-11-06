@@ -8,6 +8,16 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "robotobold";
+  src: url("./fonts/webfontkit-20241106-060113/roboto-bold-webfont.woff2")
+      format("woff2"),
+    url("./fonts/webfontkit-20241106-060113/roboto-bold-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
   margin: 0px;
@@ -87,6 +97,10 @@ header li a:hover {
 
 .type1 {
   font-family: oooh_babyregular;
+}
+
+.type2 {
+  font-family: robotobold;
 }
 
 footer {
