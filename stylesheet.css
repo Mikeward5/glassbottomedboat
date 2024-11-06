@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "oooh_babyregular";
+  src: url("./fonts/webfontkit-20241106-052432/ooohbaby-regular-webfont.woff2")
+      format("woff2"),
+    url("./fonts/webfontkit-20241106-052432/ooohbaby-regular-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   box-sizing: border-box;
   margin: 0px;
@@ -63,7 +73,7 @@ header li a:hover {
   align-items: center;
 }
 
-.head-box {
+.overlay-box {
   width: 420px;
   height: 520px;
   background-color: rgba(255, 255, 255, 0.3);
@@ -73,6 +83,10 @@ header li a:hover {
 #text {
   font-size: 64px;
   color: rgba(0, 0, 0, 1);
+}
+
+.type1 {
+  font-family: oooh_babyregular;
 }
 
 footer {
