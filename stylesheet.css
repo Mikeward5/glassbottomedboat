@@ -232,7 +232,8 @@ footer {
   header ul,
   footer,
   .hero-bubbles,
-  .logo {
+  .logo,
+  .special {
     display: none;
   }
 
