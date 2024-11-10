@@ -95,37 +95,34 @@ header li a:hover {
 }
 
 .overlay-box {
-  width: 420px;
+  width: 350px;
   height: 520px;
   background-color: rgba(0, 0, 0, 0.5);
   margin-left: 6%;
 }
 
+.box {
+  width: 280px;
+  margin: 5px auto;
+}
+
 .type1 {
   font-family: oooh_babyregular;
-  font-size: 64px;
+  font-size: 48px;
   color: rgba(255, 255, 255, 1);
-  margin-top: 25px;
-  margin-left: 25px;
+  margin-top: 30px;
 }
 
 .type2 {
   font-family: bebas_neueregular;
   font-size: 64px;
   color: rgba(255, 255, 255, 1);
-  line-height: 70px;
-  margin-top: 10px;
-  margin-left: 25px;
-  width: 230px;
 }
 
 .type3 {
   color: rgba(255, 255, 255, 1);
   font-family: Nunito Sans;
   font-size: 24px;
-  margin-top: 15px;
-  margin-left: 25px;
-  width: 300px;
 }
 
 .bubbles {
@@ -140,7 +137,10 @@ header li a:hover {
   box-shadow: 2px 3px;
   height: 35px;
   width: 140px;
-  margin: 30px 0px 0px 128px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .book-now a {
@@ -156,7 +156,7 @@ header li a:hover {
 }
 
 h1 {
-  font-size: 64px;
+  font-size: 48px;
   font-family: bebas_neueregular;
   text-align: center;
   padding: 10px;
@@ -173,8 +173,8 @@ h1 {
   align-items: center;
   font-size: 24px;
   font-family: Nunito Sans;
-  padding: 8%;
-  margin: 0 10px;
+  padding: 20px 6% 20px 6%;
+  margin: 15px 10px;
 }
 
 .secondary-box ul {
