@@ -31,7 +31,7 @@
 .menu {
   display: none;
   float: right;
-  margin: 40px;
+  margin: 15px 40px;
 }
 
 header {
@@ -214,20 +214,32 @@ h1 {
 }
 
 /* MEET THE TEAM PAGE */
-.meet-team .breadcrumb a {
+.meet-team .breadcrumb a,
+.gallery .breadcrumb a,
+.trip-information .breadcrumb a,
+.contact-us .breadcrumb a {
   color: #000;
   text-decoration: none;
 }
 
-.meet-team .breadcrumb {
+.meet-team .breadcrumb,
+.gallery .breadcrumb,
+.trip-information .breadcrumb,
+.contact-us .breadcrumb {
   margin: 5px 20px;
 }
 
-.meet-team .breadcrumb a:hover {
+.meet-team .breadcrumb a:hover,
+.gallery .breadcrumb a:hover,
+.trip-information .breadcrumb a:hover,
+.contact-us .breadcrumb a:hover {
   color: #ff6000;
 }
 
-.meet-team h1 {
+.meet-team h1,
+.gallery h1,
+.trip-information h1,
+.contact-us h1 {
   text-align: left;
   font-size: 36px;
   margin-left: 10px;
@@ -321,7 +333,7 @@ h1 {
   line-height: 40px;
 }
 
-#but {
+#see-blog-button {
   position: absolute;
   bottom: 0%;
   border-top: none;
@@ -330,6 +342,10 @@ h1 {
 .blog-card button {
   margin-right: 0px;
 }
+
+/* TRIP INFORMATION */
+
+/* CONTACT PAGE */
 
 /* FOOTER */
 
@@ -357,8 +373,13 @@ footer {
     display: none;
   }
 
+  header {
+    height: 80px;
+  }
+
   .menu {
     display: flex;
+    border: 1px solid red;
   }
 
   .hero-overlay-box {
@@ -407,9 +428,10 @@ footer {
     background-color: #ff6000;
     color: black;
     border-top: none;
+    box-shadow: 3px 5px;
   }
 
-  #but {
+  #see-blog-button {
     display: none;
   }
 }
