@@ -506,11 +506,18 @@ footer {
   background-color: #24376e;
   height: 100px;
   padding: 25px;
+  position: relative;
 }
 
 .footer-contact p {
   display: flex;
   justify-content: center;
+}
+
+footer img {
+  position: absolute;
+  display: block;
+  right: 2%;
 }
 
 /* REACTIVE CONDITIONS */
