@@ -343,7 +343,7 @@ h1 {
   margin-right: 0px;
 }
 
-/* Gallery */
+/* GALLERY */
 
 .collection {
   display: flex;
@@ -375,7 +375,7 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 80px;
+  margin: 30px 80px;
 }
 
 .photos img {
@@ -436,6 +436,10 @@ footer {
   .person-card img {
     float: none;
     margin: 0px;
+  }
+
+  .photos img {
+    margin: 20px auto;
   }
 }
 
