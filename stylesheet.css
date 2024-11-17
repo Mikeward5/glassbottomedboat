@@ -387,6 +387,116 @@ h1 {
 
 /* TRIP INFORMATION */
 
+.at-a-glance {
+  height: auto;
+  background-color: #24376e;
+  margin: 20px 50px 20px 50px;
+  border-radius: 20px;
+}
+
+.glance-header {
+  padding: 10px;
+  color: white;
+  width: 100%;
+  height: 80px;
+}
+
+.glance-header h2,
+.glance-two h2 {
+  font-family: bebas_neueregular;
+  font-size: 36px;
+}
+
+.glance-wrapper {
+  display: flex;
+  position: relative;
+  height: auto;
+}
+
+.glance-box {
+  min-height: 400px;
+}
+
+.glance-one {
+  width: 20%;
+  min-width: 150px;
+  border-top: 3px solid #b4bca1;
+}
+
+.glance-one img {
+  display: block;
+  margin: 45px auto;
+}
+
+.glance-two {
+  width: 80%;
+  color: white;
+  padding: 40px;
+  border-top: 3px solid #b4bca1;
+  position: relative;
+}
+
+.glance-two img {
+  display: block;
+  float: right;
+}
+
+.glance-two-mini-head {
+  position: relative;
+  margin-top: 30px;
+}
+
+.supplementary-wrapper {
+  height: auto;
+
+  margin: 20px 50px 20px 50px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.supplementary-wrapper li {
+  list-style-type: none;
+}
+
+.button-wrapper {
+  width: 700px;
+}
+
+.supplementary-wrapper button {
+  width: 100%;
+  height: 60px;
+  margin: 5px 0px;
+  box-shadow: 3px 5px;
+  border-radius: 20px;
+  background-color: #ececec;
+}
+
+.supplementary-wrapper h1 {
+  text-align: center;
+}
+
+.map-imbed {
+  margin: 20px;
+  position: relative;
+  overflow: hidden;
+  width: 500px;
+}
+
+.map-imbed::after {
+  display: block;
+  content: "";
+  padding-top: 56.25%;
+}
+
+.map-imbed iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 500px;
+  max-height: 500px;
+}
 /* CONTACT PAGE */
 
 /* FOOTER */
@@ -444,6 +554,10 @@ footer {
     width: 300px;
     height: 300px;
   }
+
+  .glance-box {
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 992px) {
@@ -482,10 +596,15 @@ footer {
   #see-blog-button {
     display: none;
   }
+
+  .supplementary-wrapper {
+    flex-wrap: wrap;
+  }
 }
 
 @media only screen and (max-width: 1300px) {
-  .logo {
+  .logo,
+  .glance-two img {
     display: none;
   }
 }
