@@ -438,6 +438,10 @@ footer {
     float: none;
     margin: 0px;
   }
+
+  .photos img {
+    justify-content: center;
+  }
 }
 
 @media only screen and (max-width: 992px) {
