@@ -356,6 +356,15 @@ footer {
   .hero-overlay-box {
     margin: 0 auto;
   }
+
+  .person-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .person-card img {
+    float: none;
+  }
 }
 
 @media only screen and (max-width: 992px) {
@@ -385,6 +394,9 @@ footer {
   .blog-card {
     max-width: 250px;
     margin-bottom: 10px;
+    background-color: #ff6000;
+    color: black;
+    border-top: none;
   }
 
   #but {
