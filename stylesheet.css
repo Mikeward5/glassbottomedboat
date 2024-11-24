@@ -478,6 +478,78 @@ h1 {
 }
 /* CONTACT PAGE */
 
+.contact-wrapper {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.text-wrap {
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.text-wrap h2 {
+  font-size: 36px;
+  font-family: bebas_neueregular;
+  letter-spacing: 2px;
+}
+
+.text-wrap h3 {
+  font-size: 24px;
+}
+
+.temp {
+  height: 700px;
+  border-radius: 20px;
+}
+
+.form-box {
+  width: 60%;
+  padding: 20px;
+}
+
+form {
+  width: 500px;
+  margin: 0 auto;
+  line-height: 40px;
+}
+
+.form-box form .enter {
+  border: 1px solid black;
+  width: 500px;
+  height: 40px;
+  border-radius: 20px;
+  padding-left: 10px;
+}
+
+.form-box form textarea {
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.form-box form .submit {
+  background-color: #ff6000;
+  color: white;
+  width: 300px;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid black;
+  margin-left: 20%;
+}
+
+.address-box {
+  width: 500px;
+  background-color: #24376e;
+  position: relative;
+}
+
+.address-box img {
+  position: absolute;
+  bottom: 0%;
+}
+
 /* FOOTER */
 
 footer {
