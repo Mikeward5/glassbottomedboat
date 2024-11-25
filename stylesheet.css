@@ -674,6 +674,8 @@ footer img {
   .contact-wrapper {
     flex-direction: column;
     align-items: center;
+    justify-content: none;
+    margin: 0;
   }
 
   .address-box {
