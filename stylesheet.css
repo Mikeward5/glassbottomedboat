@@ -673,7 +673,11 @@ footer img {
   }
 
   .address-box {
-    width: 100%;
+    width: 85%;
+  }
+
+  .form-box {
+    width: 85%;
   }
 
   .img-container {
