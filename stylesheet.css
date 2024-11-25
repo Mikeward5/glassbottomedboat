@@ -633,6 +633,10 @@ footer img {
   .form-box form .submit {
     width: 100%;
   }
+
+  .address-box img {
+    margin: 0px;
+  }
 }
 
 @media only screen and (max-width: 992px) {
