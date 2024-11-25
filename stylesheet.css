@@ -267,8 +267,7 @@ h1 {
 
 .blog-section {
   width: 500px;
-  min-height: auto;
-  max-height: 100%;
+  height: auto;
   background-color: #24376e;
   border-radius: 20px;
   display: flex;
@@ -313,9 +312,9 @@ h1 {
 }
 
 #see-blog-button {
-  position: absolute;
-  bottom: 0%;
-  border-top: none;
+  margin-top: 20px;
+  width: 100%;
+  text-align: center;
 }
 
 .blog-card button {
@@ -478,6 +477,10 @@ h1 {
 }
 /* CONTACT PAGE */
 
+.contact-us h2 {
+  margin-left: 20px;
+}
+
 .contact-wrapper {
   display: flex;
   justify-content: space-around;
@@ -508,17 +511,22 @@ h1 {
 .form-box {
   width: 60%;
   padding: 20px;
+  display: flex;
+  align-items: center;
 }
 
 form {
-  width: 500px;
+  max-width: 500px;
+  min-width: 180px;
   margin: 0 auto;
-  line-height: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .form-box form .enter {
   border: 1px solid black;
-  width: 500px;
+  width: 100%;
   height: 40px;
   border-radius: 20px;
   padding-left: 10px;
@@ -527,6 +535,7 @@ form {
 .form-box form textarea {
   border: 1px solid black;
   border-radius: 20px;
+  width: 100%;
 }
 
 .form-box form .submit {
@@ -536,7 +545,6 @@ form {
   height: 40px;
   border-radius: 20px;
   border: 1px solid black;
-  margin-left: 20%;
 }
 
 .address-box {
@@ -548,6 +556,7 @@ form {
 .address-box img {
   position: absolute;
   bottom: 0%;
+  margin-left: 25px;
 }
 
 /* FOOTER */
@@ -635,7 +644,7 @@ footer img {
   }
 
   .blog-section {
-    flex-direction: row;
+    flex-direction: column;
     align-items: flex-start;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -643,8 +652,7 @@ footer img {
   }
 
   .blog-card {
-    max-width: 250px;
-    margin-bottom: 10px;
+    margin: 10px;
     background-color: #ff6000;
     color: black;
     border-top: none;
@@ -657,6 +665,20 @@ footer img {
 
   .supplementary-wrapper {
     flex-wrap: wrap;
+  }
+
+  .contact-wrapper {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .address-box {
+    width: 100%;
+  }
+
+  .img-container {
+    display: flex;
+    justify-content: center;
   }
 }
 
