@@ -682,6 +682,11 @@ footer img {
     width: 100%;
   }
 
+  .address-box img {
+    width: 200px;
+    height: auto;
+  }
+
   .form-box {
     width: 100%;
   }
