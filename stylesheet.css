@@ -629,6 +629,10 @@ footer img {
   .address-box {
     width: 100%;
   }
+
+  .form-box form .submit {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 992px) {
@@ -683,7 +687,7 @@ footer img {
   }
 
   .address-box img {
-    width: 200px;
+    width: 400px;
     height: auto;
   }
 
