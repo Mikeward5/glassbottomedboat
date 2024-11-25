@@ -625,6 +625,10 @@ footer img {
   .glance-box {
     text-align: center;
   }
+
+  .address-box {
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 992px) {
@@ -673,11 +677,11 @@ footer img {
   }
 
   .address-box {
-    width: 85%;
+    width: 100%;
   }
 
   .form-box {
-    width: 85%;
+    width: 100%;
   }
 
   .img-container {
