@@ -638,6 +638,11 @@ footer img {
     margin: 0px;
   }
 
+  .glance-two {
+    padding: 5px;
+    width: 95%;
+  }
+
   .address-box {
     width: 100%;
   }
