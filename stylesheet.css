@@ -553,7 +553,7 @@ form {
   position: relative;
   display: flex;
   justify-content: center;
-  height: 500px;
+  height: 700px;
 }
 
 .address-box img {
@@ -690,6 +690,10 @@ footer img {
 
   .address-box img {
     width: 300px;
+  }
+
+  .address-box {
+    height: 500px;
   }
 }
 
