@@ -54,6 +54,10 @@ header li {
   align-items: center;
 }
 
+.hidden-element {
+  display: none;
+}
+
 header .book,
 .blog-card button {
   background-color: #ff6000;
@@ -127,6 +131,10 @@ header li a:hover {
 
 /* INDEX BOOK NOW BUTTON */
 
+.big-wrap {
+  position: relative;
+}
+
 .hero-book-now,
 .index-information-box .book-now {
   background-color: #ff6000;
@@ -149,8 +157,9 @@ header li a:hover {
 /* INDEX INFORMATION */
 
 .index-information-section {
-  display: flexbox;
-  justify-items: center;
+  display: inline-block;
+  width: 100%;
+  position: relative;
 }
 
 h1 {
@@ -158,11 +167,13 @@ h1 {
   font-family: bebas_neueregular;
   text-align: center;
   padding: 10px;
+  margin: 0 auto;
 }
 
 .index-information-box {
   position: relative;
   height: auto;
+  max-width: 700px;
   border: 1px solid black;
   border-radius: 20px;
   box-shadow: 2px 3px;
@@ -171,7 +182,7 @@ h1 {
   justify-content: center;
   align-items: center;
   padding: 30px 8% 30px 8%;
-  margin: 15px 10px;
+  margin: 0 auto;
 }
 
 .index-information-box ul {
@@ -393,7 +404,7 @@ h1 {
 }
 
 .glance-box {
-  min-height: 400px;
+  height: auto;
 }
 
 .glance-one {
@@ -420,7 +431,7 @@ h1 {
 
 .glance-two-mini-head {
   position: relative;
-  margin-top: 30px;
+  margin: 30px 0px;
 }
 
 .supplementary-wrapper {
@@ -516,11 +527,11 @@ h1 {
 
 form {
   max-width: 500px;
-  min-width: 180px;
+  min-width: 200px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
 }
 
 .form-box form .enter {
@@ -599,6 +610,10 @@ footer img {
     margin: 0;
   }
 
+  .logo-header h1 {
+    text-align: center;
+  }
+
   .menu {
     display: flex;
   }
@@ -634,7 +649,8 @@ footer img {
     align-items: center;
   }
 
-  .at-a-glance {
+  .at-a-glance,
+  .address-box img {
     margin: 0px;
   }
 
@@ -643,16 +659,9 @@ footer img {
     width: 95%;
   }
 
-  .address-box {
-    width: 100%;
-  }
-
+  .address-box,
   .form-box form .submit {
     width: 100%;
-  }
-
-  .address-box img {
-    margin: 0px;
   }
 }
 
@@ -662,8 +671,18 @@ footer img {
   }
 
   .book,
-  .logo {
+  .logo,
+  #see-blog-button,
+  .hero-bubbles {
     display: none;
+  }
+
+  .hidden-element {
+    display: inline-block;
+  }
+
+  .form-box {
+    width: 100%;
   }
 
   .team-blog-section {
@@ -686,10 +705,6 @@ footer img {
     color: black;
     border-top: none;
     box-shadow: 3px 5px;
-  }
-
-  #see-blog-button {
-    display: none;
   }
 
   .supplementary-wrapper {
