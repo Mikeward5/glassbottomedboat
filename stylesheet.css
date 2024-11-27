@@ -376,7 +376,8 @@ h1 {
   padding: 10px;
   color: white;
   width: 100%;
-  height: 80px;
+  height: auto;
+  border-bottom: 3px solid #b4bca1;
 }
 
 .glance-header h2,
@@ -398,7 +399,6 @@ h1 {
 .glance-one {
   width: 20%;
   min-width: 150px;
-  border-top: 3px solid #b4bca1;
 }
 
 .glance-one img {
@@ -410,7 +410,6 @@ h1 {
   width: 80%;
   color: white;
   padding: 40px;
-  border-top: 3px solid #b4bca1;
   position: relative;
 }
 
@@ -627,6 +626,16 @@ footer img {
 
   .glance-box {
     text-align: center;
+  }
+
+  .glance-wrapper {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .at-a-glance {
+    margin: 0px;
   }
 
   .address-box {
