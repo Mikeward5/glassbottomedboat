@@ -551,6 +551,9 @@ form {
   width: 500px;
   background-color: #24376e;
   position: relative;
+  display: flex;
+  justify-content: center;
+  height: 500px;
 }
 
 .address-box img {
@@ -682,26 +685,11 @@ footer img {
   .contact-wrapper {
     flex-direction: column;
     align-items: center;
-    justify-content: none;
-    margin: 0;
-  }
-
-  .address-box {
     width: 100%;
   }
 
   .address-box img {
-    width: 350px;
-    height: auto;
-  }
-
-  .form-box {
-    width: 100%;
-  }
-
-  .img-container {
-    display: flex;
-    justify-content: center;
+    width: 300px;
   }
 }
 
