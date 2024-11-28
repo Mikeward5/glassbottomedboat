@@ -216,6 +216,17 @@ footer {
   position: relative;
 }
 
+.footer-contact p {
+  display: flex;
+  justify-content: center;
+}
+
+footer img {
+  position: absolute;
+  display: block;
+  right: 2%;
+}
+
 @media only screen and (max-width: 650px) {
   header button,
   header ul,
