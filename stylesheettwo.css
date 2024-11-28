@@ -1,0 +1,275 @@
+@font-face {
+  font-family: "oooh_babyregular";
+  src: url("./fonts/webfontkit-20241106-052432/ooohbaby-regular-webfont.woff2")
+      format("woff2"),
+    url("./fonts/webfontkit-20241106-052432/ooohbaby-regular-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "bebas_neueregular";
+  src: url("./fonts/webfontkit-20241106-064725/bebasneue-regular-webfont.woff2")
+      format("woff2"),
+    url("./fonts/webfontkit-20241106-064725/bebasneue-regular-webfont.woff")
+      format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: Nunito Sans;
+  font-size: 16px;
+}
+
+body {
+  background: linear-gradient(to bottom right, #24376e 25%, #ff6000 100%);
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-areas:
+    "header header header"
+    "hero hero hero"
+    "griditem griditem griditem"
+    "information information information"
+    "footer footer footer";
+
+  grid-template-columns: 10% 80% 10%;
+}
+
+header {
+  grid-area: header;
+  height: 120px;
+  color: white;
+}
+
+header ul {
+  display: flex;
+  justify-content: right;
+  padding: 10px 0px;
+}
+
+header li {
+  padding-right: 22px;
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+header li a {
+  color: white;
+  text-decoration: none;
+}
+
+header li a:hover {
+  color: #ff6000;
+}
+
+.hidden-element {
+  display: none;
+}
+
+header .book,
+.blog-card button {
+  background-color: #ff6000;
+  border-radius: 10px;
+  box-shadow: 2px 3px;
+  height: 35px;
+  width: 140px;
+  margin-right: 22px;
+}
+
+header .book a,
+header li a,
+.blog-card button a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu {
+  display: none;
+  float: right;
+  margin: 15px 40px;
+}
+
+.hero {
+  grid-area: hero;
+  background-image: url("./resources/common\ seal7.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  height: 660px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.hero-overlay-box {
+  width: 350px;
+  height: 520px;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-left: 6%;
+}
+
+.box {
+  width: 280px;
+  margin: 5px auto;
+}
+
+.type1 {
+  font-family: oooh_babyregular;
+  font-size: 48px;
+  color: rgba(255, 255, 255, 1);
+  margin-top: 30px;
+}
+
+.type2 {
+  font-family: bebas_neueregular;
+  font-size: 64px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.type3 {
+  color: rgba(255, 255, 255, 1);
+  font-size: 24px;
+}
+
+.hero-bubbles {
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+}
+
+.griditem {
+  grid-area: griditem;
+  grid-column: 2 / 3;
+  text-align: center;
+  padding: 10px 0px;
+}
+
+.griditem h1 {
+  font-size: 48px;
+  font-family: bebas_neueregular;
+}
+
+.information {
+  grid-area: information;
+  height: 400px;
+  grid-column: 2 / 3;
+  display: inline-flex;
+  position: relative;
+}
+
+.index-information-box {
+  position: relative;
+  height: auto;
+  max-width: 700px;
+  border: 1px solid black;
+  border-radius: 20px;
+  box-shadow: 2px 3px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 8% 30px 8%;
+  margin: 0 auto;
+  background-color: white;
+}
+
+.index-information-box ul {
+  list-style-type: none;
+}
+
+.index-information-box li,
+.index-information-box li .extra {
+  font-size: 24px;
+  line-height: 40px;
+}
+
+.hero-book-now,
+.index-information-box .book-now {
+  background-color: #ff6000;
+  border-radius: 10px;
+  box-shadow: 2px 3px;
+  height: 35px;
+  width: 140px;
+  margin: 30px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-book-now a,
+.index-information-box .book-now a {
+  color: white;
+  text-decoration: none;
+}
+
+footer {
+  grid-area: footer;
+  color: white;
+  height: 100px;
+  padding: 25px;
+  position: relative;
+}
+
+@media only screen and (max-width: 650px) {
+  header button,
+  header ul,
+  footer,
+  .hero-bubbles,
+  .logo,
+  .special {
+    display: none;
+  }
+
+  header {
+    height: 80px;
+    margin: 0;
+  }
+
+  .logo-header h1 {
+    text-align: center;
+  }
+
+  .menu {
+    display: flex;
+  }
+
+  .hero-overlay-box {
+    margin: 0 auto;
+  }
+
+  .footer-contact p {
+    display: flex;
+    justify-content: center;
+  }
+
+  footer img {
+    position: absolute;
+    display: block;
+    right: 2%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  header ul {
+    justify-content: center;
+  }
+
+  .book,
+  .logo,
+  .hero-bubbles {
+    display: none;
+  }
+
+  .hidden-element {
+    display: inline-block;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+}
