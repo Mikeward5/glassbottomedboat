@@ -499,9 +499,9 @@ header li a,
 
 .text-wrap {
   color: white;
-  padding: 20px;
   text-align: center;
   min-width: 400px;
+  padding: 20px;
 }
 
 .text-wrap h2 {
@@ -737,6 +737,7 @@ footer img {
 
   .address-box {
     height: 500px;
+    width: 425px;
   }
 }
 
