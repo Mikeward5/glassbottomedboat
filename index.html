@@ -10,9 +10,9 @@
       href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
       rel="stylesheet"
     />
-    <title>Glass Bottomed Boat</title>
+    <title>GBB Book Now</title>
   </head>
-  <body>
+  <body class="grid-container">
     <header>
       <ul>
         <li>
@@ -41,7 +41,6 @@
         <li class="hidden-element"><a href="./book.html">Book Now</a></li>
         <button class="book"><a href="./book.html">Book Now</a></button>
       </ul>
-
       <img
         class="menu"
         onclick="myFunction()"
@@ -50,61 +49,66 @@
         height="45px"
       />
     </header>
-    <main>
-      <div class="big-wrap">
-      <div class="hero">
-        <div class="hero-overlay-box">
-          
-            <p class="type1 box">All Aboard The</p>
-            <p class="type2 box">GLASS</p>
-            <p class="type2 box">BOTTOMED</p>
-            <p class="type2 box">BOAT</p>
-            <p class="type3 box">
-              Experience your own under water adventure on our 90 minute trips
-            </p>
-            <button class="hero-book-now box"><a href="./book.html">Book Now</a></button>
-          
-        </div>
-        <img
-          class="hero-bubbles"
-          src="./resources/Assets/bubbles.png"
-          width="350px"
-          height="350px"
-        />
+    <div class="hero">
+      <div class="hero-overlay-box">
+        <p class="type1 box">All Aboard The</p>
+        <p class="type2 box">GLASS</p>
+        <p class="type2 box">BOTTOMED</p>
+        <p class="type2 box">BOAT</p>
+        <p class="type3 box">
+          Experience your own under water adventure on our 90 minute trips
+        </p>
+        <button class="hero-book-now box">
+          <a href="./book.html">Book Now</a>
+        </button>
       </div>
-    </main>
-    <section>
-      <div class="index-information-section">
-        <div class="logo-header">
-          <img
-          class="logo"
-          src="./resources/logo updated.png"
-          width="250px"
-          height="250px"
-        />
-          <h1>Experience your own Wildlife Adventure</h1>
-          </div>
-          <div class="index-information-box">
-            <ul>
-              <li><img src="./resources/icons8-right-arrow-24.png" /> Daily 90 Minute Trips</li>
-              <li><img src="./resources/icons8-right-arrow-24.png" /> Dog Friendly</li>
-              <li><img src="./resources/icons8-right-arrow-24.png" /> £30 per person</li>
-              <li><img src="./resources/icons8-right-arrow-24.png" /> Perfect for families and Young children</li>
-              <li><img src="./resources/icons8-right-arrow-24.png" /> View <a class="extra" href="./tripinformation.html">Trip Information</a></li>
-              <li><button class="book-now" id="boxid"><a href="./book.html">Book Now</a></button></li>
-            </ul>
-              <img class="special" src="./resources/AtlanticGreybgremoved.png" width="200px" height="300px" />
-          </div>
-        </div>
+      <img
+        class="hero-bubbles"
+        src="./resources/Assets/bubbles.png"
+        width="350px"
+        height="350px"
+      />
+    </div>
+
+    <div class="griditem">
+      <h1>Experience your own Wildlife Adventure</h1>
+    </div>
+    <div class="information">
+      <div class="index-information-box">
+        <ul>
+          <li>
+            <img src="./resources/icons8-right-arrow-24.png" /> Daily 90 Minute
+            Trips
+          </li>
+          <li>
+            <img src="./resources/icons8-right-arrow-24.png" /> Dog Friendly
+          </li>
+          <li>
+            <img src="./resources/icons8-right-arrow-24.png" /> £30 per person
+          </li>
+          <li>
+            <img src="./resources/icons8-right-arrow-24.png" /> Perfect for
+            families and Young children
+          </li>
+          <li>
+            <img src="./resources/icons8-right-arrow-24.png" /> View
+            <a class="extra" href="./tripinformation.html">Trip Information</a>
+          </li>
+          <li>
+            <button class="book-now" id="boxid">
+              <a href="./book.html">Book Now</a>
+            </button>
+          </li>
+        </ul>
       </div>
     </div>
-    </section>
-    <footer>
+
+    <footer class="foot">
       <img
-      src="./resources/travellerchoice2022.jpg"
-      width="60px"
-      height="60px"
-    />
+        src="./resources/travellerchoice2022.jpg"
+        width="60px"
+        height="60px"
+      />
       <div class="footer-contact">
         <p>01445 712674 | 07565 941021</p>
         <p>skipper@glassbottomedboat.co.uk</p>
