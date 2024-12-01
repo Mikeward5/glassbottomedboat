@@ -225,10 +225,11 @@ header li a,
 .trip-information h1,
 .contact-us h1 {
   text-align: left;
-  font-size: 36px;
+  font-size: 32px;
   margin-left: 10px;
   color: white;
   padding: 10px;
+  text-transform: uppercase;
 }
 
 .team-blog-section {
@@ -254,6 +255,7 @@ header li a,
   box-shadow: 2px 3px;
   padding: 30px;
   margin: 10px 20px;
+  background-color: white;
 }
 
 .person-card img {
@@ -271,7 +273,7 @@ header li a,
 
 .person-card p {
   padding: 10px;
-  color: white;
+  color: black;
 }
 
 .blog-section {
@@ -297,14 +299,17 @@ header li a,
 .blog-title {
   color: white;
   width: 100%;
-  padding: 10px;
 }
 
 .blog-title h2 {
   font-family: bebas_neueregular;
   font-size: 36px;
-  letter-spacing: 3px;
-  padding-bottom: 10px;
+  letter-spacing: 1px;
+  padding: 20px;
+}
+
+.blog-title p {
+  padding: 0px 0px 10px 20px;
 }
 
 .blog-card h3 {
@@ -376,10 +381,9 @@ header li a,
 
 .at-a-glance {
   height: auto;
-  background-color: #24376e;
+  background: none;
   margin: 20px 50px 20px 50px;
   border-radius: 20px;
-  border: 2px solid #b4bca1;
 }
 
 .glance-header {
@@ -655,6 +659,11 @@ footer img {
     text-align: center;
   }
 
+  .glance-header {
+    padding-left: 40px;
+    border-bottom: none;
+  }
+
   .glance-wrapper {
     flex-direction: column;
     flex-wrap: wrap;
@@ -674,6 +683,14 @@ footer img {
   .address-box,
   .form-box form .submit {
     width: 100%;
+  }
+
+  .button-wrapper {
+    width: 95%;
+  }
+
+  .supplementary-wrapper {
+    margin: 0px;
   }
 }
 
@@ -709,14 +726,21 @@ footer img {
     flex-wrap: wrap;
     justify-content: space-around;
     width: 100%;
+    background: none;
   }
 
   .blog-card {
-    margin: 10px;
-    background-color: #ff6000;
+    margin: 10px 30px;
+    background-color: #24376e;
     color: black;
     border-top: none;
     box-shadow: 3px 5px;
+    border-radius: 20px;
+  }
+
+  .blog-card h3,
+  .blog-card p {
+    color: white;
   }
 
   .supplementary-wrapper {
