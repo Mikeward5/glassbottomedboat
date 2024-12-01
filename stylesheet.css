@@ -500,7 +500,6 @@ header li a,
 .text-wrap {
   color: white;
   text-align: center;
-  min-width: 400px;
   padding: 20px;
 }
 
@@ -576,6 +575,7 @@ form {
   position: absolute;
   bottom: 0%;
   margin-left: 25px;
+  border: 1px solid black;
 }
 
 /* FOOTER */
