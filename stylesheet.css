@@ -227,6 +227,8 @@ header li a,
   text-align: left;
   font-size: 36px;
   margin-left: 10px;
+  color: white;
+  padding: 10px;
 }
 
 .team-blog-section {
@@ -264,10 +266,12 @@ header li a,
   font-size: 36px;
   padding: 10px;
   font-family: oooh_babyregular;
+  color: black;
 }
 
 .person-card p {
   padding: 10px;
+  color: white;
 }
 
 .blog-section {
@@ -375,6 +379,7 @@ header li a,
   background-color: #24376e;
   margin: 20px 50px 20px 50px;
   border-radius: 20px;
+  border: 2px solid #b4bca1;
 }
 
 .glance-header {
@@ -383,6 +388,7 @@ header li a,
   width: 100%;
   height: auto;
   border-bottom: 3px solid #b4bca1;
+  letter-spacing: 1px;
 }
 
 .glance-header h2,
@@ -495,6 +501,7 @@ header li a,
   color: white;
   padding: 20px;
   text-align: center;
+  min-width: 400px;
 }
 
 .text-wrap h2 {
@@ -517,6 +524,11 @@ header li a,
   padding: 20px;
   display: flex;
   align-items: center;
+}
+
+.form-box label {
+  font-weight: bold;
+  font-size: 20px;
 }
 
 form {
@@ -552,7 +564,7 @@ form {
 }
 
 .address-box {
-  width: 500px;
+  max-width: 500px;
   background-color: #24376e;
   position: relative;
   display: flex;
