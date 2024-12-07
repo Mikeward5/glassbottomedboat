@@ -373,6 +373,7 @@ header li a,
 .photos img {
   width: 400px;
   height: 400px;
+  -o-object-fit: cover;
   object-fit: cover;
   margin: 20px;
 }
