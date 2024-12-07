@@ -47,7 +47,7 @@ body {
 
 header {
   grid-area: header;
-  height: 120px;
+  height: 100px;
   color: white;
 }
 
@@ -493,6 +493,8 @@ header li a,
 
 .contact-us h2 {
   margin-left: 20px;
+  font-size: 18px;
+  color: white;
 }
 
 .contact-wrapper {
@@ -532,6 +534,7 @@ header li a,
 .form-box label {
   font-weight: bold;
   font-size: 20px;
+  color: white;
 }
 
 form {
@@ -555,6 +558,7 @@ form {
   border: 1px solid black;
   border-radius: 20px;
   width: 100%;
+  padding: 15px;
 }
 
 .form-box form .submit {
