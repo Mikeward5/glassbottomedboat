@@ -588,17 +588,18 @@ form {
 
 .bokunContainer {
   display: flex;
-  position: relative;
-  width: 100%;
+
+  margin: 20px;
 }
 
 .bokunWidget {
-  max-width: 600px;
-  padding: 20px;
+  min-width: 400px;
+  border: 1px solid black;
 }
 
 .side {
-  width: 100%;
+  width: 90%;
+  border: 1px solid black;
 }
 
 /* FOOTER */
@@ -783,7 +784,10 @@ footer img {
 
   .bokunContainer {
     flex-direction: column;
-    min-width: 300px;
+  }
+
+  .bokunWidget {
+    width: 400px;
   }
 }
 
