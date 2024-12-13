@@ -223,7 +223,8 @@ header li a,
 .meet-team h1,
 .gallery h1,
 .trip-information h1,
-.contact-us h1 {
+.contact-us h1,
+.bokunBook h1 {
   text-align: left;
   font-size: 32px;
   margin-left: 10px;
@@ -585,13 +586,27 @@ form {
   bottom: 0%;
 }
 
+.bokunContainer {
+  display: flex;
+  position: relative;
+  width: 100%;
+}
+
+.bokunWidget {
+  max-width: 600px;
+  padding: 20px;
+}
+
+.side {
+  width: 100%;
+}
+
 /* FOOTER */
 
 footer {
   color: white;
   height: 100px;
   padding: 25px;
-  position: relative;
 }
 
 .footer-contact p {
@@ -763,7 +778,12 @@ footer img {
   }
 
   .address-box {
-    height: 500px;
+    height: 300px;
+  }
+
+  .bokunContainer {
+    flex-direction: column;
+    min-width: 300px;
   }
 }
 
