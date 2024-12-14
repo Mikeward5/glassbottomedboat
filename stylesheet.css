@@ -293,7 +293,7 @@ header li a,
 .blog-card {
   height: auto;
   border-top: 6px solid #b4bca1;
-  color: white;
+
   padding: 20px 20px;
 }
 
@@ -307,6 +307,12 @@ header li a,
   font-size: 36px;
   letter-spacing: 1px;
   padding: 20px;
+}
+
+.blog-card h3,
+.blog-card p,
+.blog-card a {
+  color: white;
 }
 
 .blog-title p {
@@ -757,12 +763,6 @@ footer img {
     border-top: none;
     box-shadow: 3px 5px;
     border-radius: 20px;
-  }
-
-  .blog-card h3,
-  .blog-card p,
-  .blog-card a {
-    color: white;
   }
 
   .supplementary-wrapper {
