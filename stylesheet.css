@@ -473,6 +473,15 @@ header li a,
   background-color: #ececec;
 }
 
+.hidden-menu {
+  width: 100%;
+  background-color: #ececec;
+  height: 200px;
+  display: none;
+  border-radius: 20px;
+  margin: 10px 0px;
+}
+
 .supplementary-wrapper h1 {
   text-align: center;
 }
