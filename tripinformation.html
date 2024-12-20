@@ -10,17 +10,21 @@
       href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
       rel="stylesheet"
     />
-    <script src="button.js" defer></script>
+    <script src="button.js" async></script>
+    <script src="info.js" defer></script>
     <title>Glass Bottomed Boat Trip Information</title>
   </head>
   <body>
-    <header>
-      <ul>
+    <header role="banner">
+      <ul role="presentation">
         <li>
           <img
             src="./resources/icons8-phone-50.png"
             height="25px"
             width="25px"
+            alt="phone icon"
+            aria-label="Phone us"
+            role="presentation"
           />
         </li>
         <li>01445 712674 | 07565 941021</li>
@@ -29,29 +33,38 @@
             src="./resources/icons8-email-48.png"
             height="25px"
             width="25px"
+            alt="email icon"
+            aria-label="email us"
+            role="presentation"
           />
         </li>
         <li>skipper@glassbottomedboat.co.uk</li>
       </ul>
-      <ul id="dropdown">
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./meettheteam.html">Meet The Team</a></li>
-        <li><a href="./tripinformation.html">Trip Information</a></li>
-        <li><a href="./gallery.html">Gallery</a></li>
-        <li><a href="./contactus.html">Contact Us</a></li>
-        <li class="hidden-element"><a href="./book.html">Book Now</a></li>
-        <button class="book"><a href="./book.html">Book Now</a></button>
+      <ul id="dropdown" role="menubar">
+        <li role="menuitem"><a href="./index.html">Home</a></li>
+        <li role="menuitem"><a href="./meettheteam.html">Meet The Team</a></li>
+        <li role="menuitem">
+          <a href="./tripinformation.html">Trip Information</a>
+        </li>
+        <li role="menuitem"><a href="./gallery.html">Gallery</a></li>
+        <li role="menuitem"><a href="./contactus.html">Contact Us</a></li>
+        <li class="hidden-element" role="menuitem">
+          <a href="./book.html">Book Now</a>
+        </li>
+        <button class="book" role="menuitem">
+          <a href="./book.html">Book Now</a>
+        </button>
       </ul>
-
       <img
         class="menu"
         onclick="myFunction()"
         src="./resources/icons8-menu-50.png"
         width="45px"
         height="45px"
+        alt="menu icon"
       />
     </header>
-    <main class="trip-information">
+    <main class="trip-information" role="main">
       <h1>Trip Information</h1>
       <div class="at-a-glance">
         <div class="glance-header">
@@ -62,7 +75,7 @@
           <div class="glance-box glance-one">
             <img src="./resources/Assets/Asset 3.png" />
           </div>
-          <div class="glance-box glance-two">
+          <div class="glance-box glance-two" role="presentation">
             <img
               src="./resources/icons8-anchor-99.png"
               width="250px"
@@ -91,21 +104,56 @@
       <section class="supplementary-wrapper">
         <div class="button-wrapper">
           <h1>Frequently Asked Questions</h1>
-          <ol>
+          <ol role="presentation">
             <li><button id="button1">What should I bring?</button></li>
-            <li class="hidden-menu" id="menu1"></li>
-            <li><button id="button2">How do i get to you?</button></li>
-            <li class="hidden-menu" id="menu2"></li>
-            <li><button id="button3">What are we likely to see?</button></li>
-            <li class="hidden-menu" id="menu3"></li>
-            <li>
-              <button id="button4">Do you allow children onboard?</button>
+            <li id="menu1">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequa
+              </p>
             </li>
-            <li class="hidden-menu" id="menu4"></li>
+            <li><button id="button2">How do i get to you?</button></li>
+            <li id="menu2">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequa
+              </p>
+            </li>
+            <li><button id="button3">What are we likely to see?</button></li>
+            <li id="menu3">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequa
+              </p>
+            </li>
+            <li>
+              <button id="button4">What do I do on Arrival?</button>
+            </li>
+            <li id="menu4">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequa
+              </p>
+            </li>
             <li>
               <button id="button5">What happens if the weather is bad?</button>
             </li>
-            <li class="hidden-menu" id="menu5"></li>
+            <li id="menu5">
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequa
+              </p>
+            </li>
           </ol>
         </div>
         <div class="map-imbed">
@@ -121,13 +169,18 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="foot" role="contentinfo">
       <img
         src="./resources/travellerchoice2022.jpg"
         width="60px"
         height="60px"
+        alt="travellers choice award picture"
       />
-      <div class="footer-contact">
+      <div
+        class="footer-contact"
+        role="complementary"
+        aria-label="contact us on"
+      >
         <p>01445 712674 | 07565 941021</p>
         <p>skipper@glassbottomedboat.co.uk</p>
       </div>

@@ -14,13 +14,16 @@
     <title>Glass Bottomed Boat Meet The Team</title>
   </head>
   <body>
-    <header>
-      <ul>
+    <header role="banner">
+      <ul role="presentation">
         <li>
           <img
             src="./resources/icons8-phone-50.png"
             height="25px"
             width="25px"
+            alt="phone icon"
+            aria-label="Phone us"
+            role="presentation"
           />
         </li>
         <li>01445 712674 | 07565 941021</li>
@@ -29,29 +32,38 @@
             src="./resources/icons8-email-48.png"
             height="25px"
             width="25px"
+            alt="email icon"
+            aria-label="email us"
+            role="presentation"
           />
         </li>
         <li>skipper@glassbottomedboat.co.uk</li>
       </ul>
-      <ul id="dropdown">
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./meettheteam.html">Meet The Team</a></li>
-        <li><a href="./tripinformation.html">Trip Information</a></li>
-        <li><a href="./gallery.html">Gallery</a></li>
-        <li><a href="./contactus.html">Contact Us</a></li>
-        <li class="hidden-element"><a href="./book.html">Book Now</a></li>
-        <button class="book"><a href="./book.html">Book Now</a></button>
+      <ul id="dropdown" role="menubar">
+        <li role="menuitem"><a href="./index.html">Home</a></li>
+        <li role="menuitem"><a href="./meettheteam.html">Meet The Team</a></li>
+        <li role="menuitem">
+          <a href="./tripinformation.html">Trip Information</a>
+        </li>
+        <li role="menuitem"><a href="./gallery.html">Gallery</a></li>
+        <li role="menuitem"><a href="./contactus.html">Contact Us</a></li>
+        <li class="hidden-element" role="menuitem">
+          <a href="./book.html">Book Now</a>
+        </li>
+        <button class="book" role="menuitem">
+          <a href="./book.html">Book Now</a>
+        </button>
       </ul>
-
       <img
         class="menu"
         onclick="myFunction()"
         src="./resources/icons8-menu-50.png"
         width="45px"
         height="45px"
+        alt="menu icon"
       />
     </header>
-    <main class="meet-team">
+    <main class="meet-team" role="main">
       <h1>Meet The Team</h1>
     <div class="team-blog-section">
       
@@ -59,7 +71,7 @@
         <div class="person-card julie">
           <img src="./resources/mike3.jpg" width="250px" height="250px" />
           <h2>Michael Ward (Owner & Skipper)</h2>
-          <p>
+          <p aria-label="owner">
             Skipper Michael took over the running of trips for the 2024 season, replacing, Steve, his father in the day to day running of the boat. He quickly proved himself to be a dab hand at catching octopi; proving that they indeed ‘have a bite’; these days he’s very careful when handling even the smallest octopus.
 Originally from Warwickshire, he moved up to Scotland at the beginning of the 2024 season, expecting to be taken on as ‘relief skipper’.  Highly qualified, he suddenly got thrown into the deep end when Steve couldn’t run the tours.
 For 2025, he has taken over the reigns of the family business, securing the future of The Glass Bottomed Boat in Gairloch.
@@ -70,7 +82,7 @@ If you have any questions, Michael’s your man. And if he doesn’t know the an
         <div class="person-card steve">
           <img src="./resources/julie boat.jpg" width="250px" height="250px" />
           <h2>Julie Ward (Administrator)</h2>
-          <p>
+          <p aria-label="Administrator">
             Julie has run the office and bookings side for four years. 2025 will be her fifth year at the helm. And I do mean at the helm! Without her friendly face greeting and preparing the customers for what is to come, the whole caboodle would revert to chaos.
 
 She’s mainly to be found in ‘The Little Grey Hut’ (our booking office), but gets out on trips as often as possible, just to keep Michael on his toes. Maybe taking the helm while Michael, her son, answers questions or explains what you’re looking at.
@@ -82,7 +94,7 @@ Originally from Warwickshire she moved to Suffolk and became a ‘round-Britain�
         <div class="person-card michael">
           <img src="./resources/dadBoat.jpg" width="250px" height="250px" />
           <h2>Steve Ward (Relief-Skipper)</h2>
-          <p>
+          <p aria-label="relief skipper">
             Skipper Steve, Julie’s husband and Michael’s dad, has taken a little bit of a back seat and assumed the role of relief skipper and relief administrator. But he will be seen at times, either running a trip or assisting either Michael or Julie.
             Everyone tells us he’s great with kids; that’s probably because he still is one.
             Again, from Warwickshire, he moved to Suffolk handling boats of all types before relocating to Scotland and taking over the business from its prior owner in 2022 (after a year working for him in 2021).
@@ -137,13 +149,18 @@ Michael, Julie and Steve.
         </div>
       </div>
     </main>
-    <footer>
+    <footer class="foot" role="contentinfo">
       <img
-      src="./resources/travellerchoice2022.jpg"
-      width="60px"
-      height="60px"
-    />
-      <div class="footer-contact">
+        src="./resources/travellerchoice2022.jpg"
+        width="60px"
+        height="60px"
+        alt="travellers choice award picture"
+      />
+      <div
+        class="footer-contact"
+        role="complementary"
+        aria-label="contact us on"
+      >
         <p>01445 712674 | 07565 941021</p>
         <p>skipper@glassbottomedboat.co.uk</p>
       </div>
