@@ -3,6 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Meet the team behind the Glass Bottomed Boat. Learn about our crew and their roles in making your trip unforgettable."
+    />
+    <meta
+      name="keywords"
+      content="Glass Bottomed Boat, meet the team, crew, family-friendly, dog-friendly"
+    />
+    <meta name="author" content="Glass Bottomed Boat" />
     <link href="stylesheet.css" type="text/css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,149 +30,228 @@
             src="./resources/icons8-phone-50.png"
             height="25px"
             width="25px"
-            alt="phone icon"
-            aria-label="Phone us"
-            role="presentation"
+            alt="Phone icon"
+            aria-hidden="true"
           />
         </li>
-        <li>01445 712674 | 07565 941021</li>
+        <li aria-label="Phone numbers">01445 712674 | 07565 941021</li>
         <li>
           <img
             src="./resources/icons8-email-48.png"
             height="25px"
             width="25px"
-            alt="email icon"
-            aria-label="email us"
-            role="presentation"
+            alt="Email icon"
+            aria-hidden="true"
           />
         </li>
-        <li>skipper@glassbottomedboat.co.uk</li>
+        <li aria-label="Email address">skipper@glassbottomedboat.co.uk</li>
       </ul>
-      <ul id="dropdown" role="menubar">
-        <li role="menuitem"><a href="./index.html">Home</a></li>
-        <li role="menuitem"><a href="./meettheteam.html">Meet The Team</a></li>
-        <li role="menuitem">
-          <a href="./tripinformation.html">Trip Information</a>
-        </li>
-        <li role="menuitem"><a href="./gallery.html">Gallery</a></li>
-        <li role="menuitem"><a href="./contactus.html">Contact Us</a></li>
-        <li class="hidden-element" role="menuitem">
-          <a href="./book.html">Book Now</a>
-        </li>
-        <button class="book" role="menuitem">
-          <a href="./book.html">Book Now</a>
-        </button>
-      </ul>
-      <img
-        class="menu"
-        onclick="myFunction()"
-        src="./resources/icons8-menu-50.png"
-        width="45px"
-        height="45px"
-        alt="menu icon"
-      />
+      <nav aria-label="Main navigation">
+        <ul id="dropdown" role="menubar">
+          <li role="none"><a href="./index.html" role="menuitem">Home</a></li>
+          <li role="none">
+            <a href="./meettheteam.html" role="menuitem">Meet The Team</a>
+          </li>
+          <li role="none">
+            <a href="./tripinformation.html" role="menuitem"
+              >Trip Information</a
+            >
+          </li>
+          <li role="none">
+            <a href="./gallery.html" role="menuitem">Gallery</a>
+          </li>
+          <li role="none">
+            <a href="./contactus.html" role="menuitem">Contact Us</a>
+          </li>
+          <li class="hidden-element" role="none">
+            <a href="./book.html" role="menuitem">Book Now</a>
+          </li>
+          <li role="none">
+            <button class="book" aria-label="Book Now">
+              <a href="./book.html">Book Now</a>
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <button class="menu" onclick="myFunction()" aria-label="Open menu">
+        <img
+          src="./resources/icons8-menu-50.png"
+          width="45px"
+          height="45px"
+          alt="Menu icon"
+        />
+      </button>
     </header>
     <main class="meet-team" role="main">
       <h1>Meet The Team</h1>
-    <div class="team-blog-section">
-      
-      <div class="team-section">
-        <div class="person-card julie">
-          <img src="./resources/mike3.jpg" width="250px" height="250px" />
-          <h2>Michael Ward (Owner & Skipper)</h2>
-          <p aria-label="owner">
-            Skipper Michael took over the running of trips for the 2024 season, replacing, Steve, his father in the day to day running of the boat. He quickly proved himself to be a dab hand at catching octopi; proving that they indeed ‘have a bite’; these days he’s very careful when handling even the smallest octopus.
-Originally from Warwickshire, he moved up to Scotland at the beginning of the 2024 season, expecting to be taken on as ‘relief skipper’.  Highly qualified, he suddenly got thrown into the deep end when Steve couldn’t run the tours.
-For 2025, he has taken over the reigns of the family business, securing the future of The Glass Bottomed Boat in Gairloch.
-If you have any questions, Michael’s your man. And if he doesn’t know the answer, he’ll find it out for you on your safe return to shore.
-
-          </p>
+      <section class="team-blog-section">
+        <div class="team-section">
+          <article class="person-card">
+            <img
+              src="./resources/mike3.jpg"
+              width="250px"
+              height="250px"
+              alt="Michael Ward"
+              loading="lazy"
+            />
+            <h2>Michael Ward (Owner & Skipper)</h2>
+            <p>
+              Skipper Michael took over the running of trips for the 2024
+              season, replacing Steve, his father, in the day-to-day running of
+              the boat. He quickly proved himself to be a dab hand at catching
+              octopi; proving that they indeed ‘have a bite’; these days he’s
+              very careful when handling even the smallest octopus. Originally
+              from Warwickshire, he moved up to Scotland at the beginning of the
+              2024 season, expecting to be taken on as ‘relief skipper’. Highly
+              qualified, he suddenly got thrown into the deep end when Steve
+              couldn’t run the tours. For 2025, he has taken over the reins of
+              the family business, securing the future of The Glass Bottomed
+              Boat in Gairloch. If you have any questions, Michael’s your man.
+              And if he doesn’t know the answer, he’ll find it out for you on
+              your safe return to shore.
+            </p>
+          </article>
+          <article class="person-card">
+            <img
+              src="./resources/julie boat.jpg"
+              width="250px"
+              height="250px"
+              alt="Julie Ward"
+              loading="lazy"
+            />
+            <h2>Julie Ward (Administrator)</h2>
+            <p>
+              Julie has run the office and bookings side for four years. 2025
+              will be her fifth year at the helm. And I do mean at the helm!
+              Without her friendly face greeting and preparing the customers for
+              what is to come, the whole caboodle would revert to chaos. She’s
+              mainly to be found in ‘The Little Grey Hut’ (our booking office),
+              but gets out on trips as often as possible, just to keep Michael
+              on his toes. Maybe taking the helm while Michael, her son, answers
+              questions or explains what you’re looking at. Originally from
+              Warwickshire she moved to Suffolk and became a ‘round-Britain’
+              sailor. You will be safe in her capable hands.
+            </p>
+          </article>
+          <article class="person-card">
+            <img
+              src="./resources/dadBoat.jpg"
+              width="250px"
+              height="250px"
+              alt="Steve Ward"
+              loading="lazy"
+            />
+            <h2>Steve Ward (Relief-Skipper)</h2>
+            <p>
+              Skipper Steve, Julie’s husband and Michael’s dad, has taken a
+              little bit of a back seat and assumed the role of relief skipper
+              and relief administrator. But he will be seen at times, either
+              running a trip or assisting either Michael or Julie. Everyone
+              tells us he’s great with kids; that’s probably because he still is
+              one. Again, from Warwickshire, he moved to Suffolk handling boats
+              of all types before relocating to Scotland and taking over the
+              business from its prior owner in 2022 (after a year working for
+              him in 2021). His ‘unique’ sense of humour will certainly be known
+              if he happens to be skippering the trip you’re on. You have been
+              warned!
+            </p>
+          </article>
         </div>
-        <div class="person-card steve">
-          <img src="./resources/julie boat.jpg" width="250px" height="250px" />
-          <h2>Julie Ward (Administrator)</h2>
-          <p aria-label="Administrator">
-            Julie has run the office and bookings side for four years. 2025 will be her fifth year at the helm. And I do mean at the helm! Without her friendly face greeting and preparing the customers for what is to come, the whole caboodle would revert to chaos.
-
-She’s mainly to be found in ‘The Little Grey Hut’ (our booking office), but gets out on trips as often as possible, just to keep Michael on his toes. Maybe taking the helm while Michael, her son, answers questions or explains what you’re looking at.
-
-Originally from Warwickshire she moved to Suffolk and became a ‘round-Britain’ sailor. You will be safe in her capable hands.
-
-          </p>
+        <div class="blog-section">
+          <div class="blog-title" id="title-blog">
+            <h2>About Alice</h2>
+            <p>All the latest News</p>
+          </div>
+          <article class="blog-card data-set">
+            <h3>Thank you to Everyone</h3>
+            <p class="date">Sept 2024</p>
+            <p>
+              Alice, the glass bottomed boat, is out on hardstanding undergoing
+              repairs to be ready for the 2025 season. We wish all of our
+              customers, both past and present, and those we’ve not had the
+              pleasure to meet yet, a very Merry Christmas and a Happy New Year.
+              From all of the team here in Gairloch Michael, Julie and Steve.
+            </p>
+            <a href="#" aria-label="Read more about Alice">READ MORE</a>
+          </article>
+          <article class="blog-card data-set">
+            <h3>Kraken has been Spotted</h3>
+            <p class="date">June 2024</p>
+            <p>
+              Skipper Mike unfortunately diagnosed with stupidity syndrome. He
+              is now the only person we know that has been bitten by an Octopus
+              in Gairloch. "It was like the kraken," he said!
+            </p>
+            <a href="#" aria-label="Read more about the Kraken">READ MORE</a>
+          </article>
+          <article class="blog-card data-set">
+            <h3>He's gone and Crashed</h3>
+            <p class="date">May 2024</p>
+            <p>
+              Unfortunately Mike has crashed and hereby has been given the
+              nickname Captain Pugwash! The boat only travels at 4 knots; how
+              can a person at that speed crash?
+            </p>
+            <a href="#" aria-label="Read more about the crash">READ MORE</a>
+          </article>
+          <article class="blog-card data-set">
+            <h3>Welcome Mike</h3>
+            <p class="date">April 2024</p>
+            <p>
+              Mike has now joined the business. Originally from Warwickshire, he
+              has moved with his family to Aultbea recently and will be acting
+              as our Relief-Skipper. We all wish Mike good luck in his new role.
+            </p>
+            <a href="#" aria-label="Read more about Mike joining">READ MORE</a>
+          </article>
+          <div class="blog-card" id="see-blog-button">
+            <button aria-label="Go to our blog">
+              <a href="#">Go To our Blog</a>
+            </button>
+          </div>
         </div>
-        <div class="person-card michael">
-          <img src="./resources/dadBoat.jpg" width="250px" height="250px" />
-          <h2>Steve Ward (Relief-Skipper)</h2>
-          <p aria-label="relief skipper">
-            Skipper Steve, Julie’s husband and Michael’s dad, has taken a little bit of a back seat and assumed the role of relief skipper and relief administrator. But he will be seen at times, either running a trip or assisting either Michael or Julie.
-            Everyone tells us he’s great with kids; that’s probably because he still is one.
-            Again, from Warwickshire, he moved to Suffolk handling boats of all types before relocating to Scotland and taking over the business from its prior owner in 2022 (after a year working for him in 2021).
-            His ‘unique’ sense of humour will certainly be known if he happens to be skippering the trip you’re on. You have been warned!
-            
-          </p>
-        </div>
-      </div>
-      <div class="blog-section">
-        <div class="blog-title" id="title-blog">
-          <h2>About Alice</h2>
-          <p>All the latest News</p>
-        </div>
-        <div class="blog-card data-set">
-          <h3>Thankyou to Everyone</h3>
-          <p class="date">Sept 2024</p>
-          <p>
-            Alice, the glass bottomed boat, is out on hardstanding undergoing repairs to be ready for the 2025 season.
-We wish all of our customers, both past and present, and those we’ve not had the pleasure to meet yet, a very Merry Christmas and a Happy New Year.
-From all of the team here in Gairloch
-Michael, Julie and Steve.
-
-          </p>
-          <a href="#">READ MORE</a>
-        </div>
-        <div class="blog-card data-set">
-          <h3>Kraken has been Spotted</h3>
-          <p class="date">June 2024</p>
-          <p>
-            Skipper Mike unfortunately diagnosed with stupidity syndrome. He is now the only person we know that has been bitten by an Octopus in Gairloch. "It was like the kraken," he said!
-          </p>
-          <a href="#">READ MORE</a>
-        </div>
-        <div class="blog-card data-set">
-          <h3>He's gone and Crashed</h3>
-          <p class="date">May 2024</p>
-          <p>
-            Unfortunately Mike has crashed and hereby has been given the nickname Captain Pugwash! The boat only travels at 4knots how can a person at that speed crash?
-          </p>
-          <a href="#">READ MORE</a>
-        </div>
-        <div class="blog-card data-set">
-          <h3>Welcome Mike</h3>
-          <p class="date">April 2024</p>
-          <p>
-            Mike has now joined the business. Originally from Warwickshire, he has moved with his family to Aultbea recently and will be acting as our Relief-Skipper. We all wish Mike good luck in his new Role.
-          </p>
-          <a href="#">READ MORE</a>
-        </div>
-        <div class="blog-card" id="see-blog-button">
-          <button><a href="#">Go To our Blog</a></button>
-        </div>
-      </div>
+      </section>
     </main>
     <footer class="foot" role="contentinfo">
       <img
         src="./resources/travellerchoice2022.jpg"
         width="60px"
         height="60px"
-        alt="travellers choice award picture"
+        alt="Travellers choice award picture"
+        loading="lazy"
       />
       <div
         class="footer-contact"
         role="complementary"
-        aria-label="contact us on"
+        aria-labelledby="contact-info"
       >
         <p>01445 712674 | 07565 941021</p>
         <p>skipper@glassbottomedboat.co.uk</p>
       </div>
     </footer>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Glass Bottomed Boat",
+        "description": "Meet the team behind the Glass Bottomed Boat. Learn about our crew and their roles in making your trip unforgettable.",
+        "url": "https://www.glassbottomedboat.co.uk",
+        "telephone": "01445 712674",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Pier Road",
+          "addressLocality": "Gairloch",
+          "postalCode": "IV21 2BQ",
+          "addressCountry": "UK"
+        },
+        "image": "https://www.glassbottomedboat.co.uk/resources/travellerchoice2022.jpg",
+        "priceRange": "$$",
+        "openingHours": "Mo-Su 09:00-17:00",
+        "sameAs": [
+          "https://www.facebook.com/glassbottomedboat",
+          "https://www.instagram.com/glassbottomedboat"
+        ]
+      }
+    </script>
   </body>
 </html>

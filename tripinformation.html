@@ -3,6 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Get all the information you need about our 90-minute Glass Bottomed Boat trips. Ideal for all ages and dog-friendly."
+    />
+    <meta
+      name="keywords"
+      content="Glass Bottomed Boat, boat trips, trip information, family-friendly, dog-friendly"
+    />
+    <meta name="author" content="Glass Bottomed Boat" />
     <link href="stylesheet.css" type="text/css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -10,7 +19,7 @@
       href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
       rel="stylesheet"
     />
-    <script src="button.js" async></script>
+    <script src="button.js" defer></script>
     <script src="info.js" defer></script>
     <title>Glass Bottomed Boat Trip Information</title>
   </head>
@@ -22,136 +31,165 @@
             src="./resources/icons8-phone-50.png"
             height="25px"
             width="25px"
-            alt="phone icon"
-            aria-label="Phone us"
-            role="presentation"
+            alt="Phone icon"
+            aria-hidden="true"
           />
         </li>
-        <li>01445 712674 | 07565 941021</li>
+        <li aria-label="Phone numbers">01445 712674 | 07565 941021</li>
         <li>
           <img
             src="./resources/icons8-email-48.png"
             height="25px"
             width="25px"
-            alt="email icon"
-            aria-label="email us"
-            role="presentation"
+            alt="Email icon"
+            aria-hidden="true"
           />
         </li>
-        <li>skipper@glassbottomedboat.co.uk</li>
+        <li aria-label="Email address">skipper@glassbottomedboat.co.uk</li>
       </ul>
-      <ul id="dropdown" role="menubar">
-        <li role="menuitem"><a href="./index.html">Home</a></li>
-        <li role="menuitem"><a href="./meettheteam.html">Meet The Team</a></li>
-        <li role="menuitem">
-          <a href="./tripinformation.html">Trip Information</a>
-        </li>
-        <li role="menuitem"><a href="./gallery.html">Gallery</a></li>
-        <li role="menuitem"><a href="./contactus.html">Contact Us</a></li>
-        <li class="hidden-element" role="menuitem">
-          <a href="./book.html">Book Now</a>
-        </li>
-        <button class="book" role="menuitem">
-          <a href="./book.html">Book Now</a>
-        </button>
-      </ul>
-      <img
-        class="menu"
-        onclick="myFunction()"
-        src="./resources/icons8-menu-50.png"
-        width="45px"
-        height="45px"
-        alt="menu icon"
-      />
+      <nav aria-label="Main navigation">
+        <ul id="dropdown" role="menubar">
+          <li role="none"><a href="./index.html" role="menuitem">Home</a></li>
+          <li role="none">
+            <a href="./meettheteam.html" role="menuitem">Meet The Team</a>
+          </li>
+          <li role="none">
+            <a href="./tripinformation.html" role="menuitem"
+              >Trip Information</a
+            >
+          </li>
+          <li role="none">
+            <a href="./gallery.html" role="menuitem">Gallery</a>
+          </li>
+          <li role="none">
+            <a href="./contactus.html" role="menuitem">Contact Us</a>
+          </li>
+          <li class="hidden-element" role="none">
+            <a href="./book.html" role="menuitem">Book Now</a>
+          </li>
+          <li role="none">
+            <button class="book" aria-label="Book Now">
+              <a href="./book.html">Book Now</a>
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <button class="menu" onclick="myFunction()" aria-label="Open menu">
+        <img
+          src="./resources/icons8-menu-50.png"
+          width="45px"
+          height="45px"
+          alt="Menu icon"
+        />
+      </button>
     </header>
     <main class="trip-information" role="main">
       <h1>Trip Information</h1>
-      <div class="at-a-glance">
-        <div class="glance-header">
+      <section class="at-a-glance">
+        <header class="glance-header">
           <h2>At a Glance</h2>
           <p>Sailing Times - Daily Schedule (April - October)</p>
-        </div>
+        </header>
         <div class="glance-wrapper">
           <div class="glance-box glance-one">
-            <img src="./resources/Assets/Asset 3.png" />
+            <img
+              src="./resources/Assets/Asset 3.png"
+              alt="Sailing times"
+              loading="lazy"
+            />
           </div>
           <div class="glance-box glance-two" role="presentation">
             <img
               src="./resources/icons8-anchor-99.png"
               width="250px"
               height="250px"
+              alt="Anchor icon"
+              loading="lazy"
             />
             <p>
               Alice is a 28 foot converted ships lifeboat that takes 11
               passengers (plus the occasional pooch!) Each person has their own
               underwater viewing port.
             </p>
-            <br />
             <p>
               We carry full safety equipment including lifejackets, life-raft
               and flares, two VHF Radios, a GPS plotter and depth sounder. She
               has a nice deep safe cockpit with seats for everyone. We promise
               you’ll feel very secure in her.
             </p>
-
-            <br />
             <div class="glance-two-mini-head">
               <h2>90 Minute TRIPS | £30 PP | FAMILY FOCUSED</h2>
             </div>
           </div>
         </div>
-      </div>
+      </section>
       <section class="supplementary-wrapper">
         <div class="button-wrapper">
-          <h1>Frequently Asked Questions</h1>
+          <h2>Frequently Asked Questions</h2>
           <ol role="presentation">
-            <li><button id="button1">What should I bring?</button></li>
-            <li id="menu1">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequa
-              </p>
+            <li>
+              <button id="button1" aria-expanded="false" aria-controls="menu1">
+                What should I bring?
+              </button>
             </li>
-            <li><button id="button2">How do i get to you?</button></li>
-            <li id="menu2">
+            <li id="menu1" hidden>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequa
-              </p>
-            </li>
-            <li><button id="button3">What are we likely to see?</button></li>
-            <li id="menu3">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequa
+                nisi ut aliquip ex ea commodo consequat.
               </p>
             </li>
             <li>
-              <button id="button4">What do I do on Arrival?</button>
+              <button id="button2" aria-expanded="false" aria-controls="menu2">
+                How do I get to you?
+              </button>
             </li>
-            <li id="menu4">
+            <li id="menu2" hidden>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequa
+                nisi ut aliquip ex ea commodo consequat.
               </p>
             </li>
             <li>
-              <button id="button5">What happens if the weather is bad?</button>
+              <button id="button3" aria-expanded="false" aria-controls="menu3">
+                What are we likely to see?
+              </button>
             </li>
-            <li id="menu5">
+            <li id="menu3" hidden>
               <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam, quis nostrud exercitation ullamco laboris
-                nisi ut aliquip ex ea commodo consequa
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </li>
+            <li>
+              <button id="button4" aria-expanded="false" aria-controls="menu4">
+                What do I do on Arrival?
+              </button>
+            </li>
+            <li id="menu4" hidden>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </li>
+            <li>
+              <button id="button5" aria-expanded="false" aria-controls="menu5">
+                What happens if the weather is bad?
+              </button>
+            </li>
+            <li id="menu5" hidden>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
               </p>
             </li>
           </ol>
@@ -165,6 +203,7 @@
             allowfullscreen=""
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"
+            aria-label="Google Maps location of Glass Bottomed Boat"
           ></iframe>
         </div>
       </section>
@@ -174,16 +213,41 @@
         src="./resources/travellerchoice2022.jpg"
         width="60px"
         height="60px"
-        alt="travellers choice award picture"
+        alt="Travellers choice award picture"
+        loading="lazy"
       />
       <div
         class="footer-contact"
         role="complementary"
-        aria-label="contact us on"
+        aria-labelledby="contact-info"
       >
         <p>01445 712674 | 07565 941021</p>
         <p>skipper@glassbottomedboat.co.uk</p>
       </div>
     </footer>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Glass Bottomed Boat",
+        "description": "Get all the information you need about our 90-minute Glass Bottomed Boat trips. Ideal for all ages and dog-friendly.",
+        "url": "https://www.glassbottomedboat.co.uk",
+        "telephone": "01445 712674",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Pier Road",
+          "addressLocality": "Gairloch",
+          "postalCode": "IV21 2BQ",
+          "addressCountry": "UK"
+        },
+        "image": "https://www.glassbottomedboat.co.uk/resources/travellerchoice2022.jpg",
+        "priceRange": "$$",
+        "openingHours": "Mo-Su 09:00-17:00",
+        "sameAs": [
+          "https://www.facebook.com/glassbottomedboat",
+          "https://www.instagram.com/glassbottomedboat"
+        ]
+      }
+    </script>
   </body>
 </html>

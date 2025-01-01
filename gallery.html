@@ -3,6 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Explore our gallery of stunning wildlife and scenic photos from our Glass Bottomed Boat trips. Ideal for all ages and dog-friendly."
+    />
+    <meta
+      name="keywords"
+      content="Glass Bottomed Boat, gallery, wildlife photos, scenic photos, family-friendly, dog-friendly"
+    />
+    <meta name="author" content="Glass Bottomed Boat" />
     <link href="stylesheet.css" type="text/css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,47 +30,57 @@
             src="./resources/icons8-phone-50.png"
             height="25px"
             width="25px"
-            alt="phone icon"
-            aria-label="Phone us"
-            role="presentation"
+            alt="Phone icon"
+            aria-hidden="true"
           />
         </li>
-        <li>01445 712674 | 07565 941021</li>
+        <li aria-label="Phone numbers">01445 712674 | 07565 941021</li>
         <li>
           <img
             src="./resources/icons8-email-48.png"
             height="25px"
             width="25px"
-            alt="email icon"
-            aria-label="email us"
-            role="presentation"
+            alt="Email icon"
+            aria-hidden="true"
           />
         </li>
-        <li>skipper@glassbottomedboat.co.uk</li>
+        <li aria-label="Email address">skipper@glassbottomedboat.co.uk</li>
       </ul>
-      <ul id="dropdown" role="menubar">
-        <li role="menuitem"><a href="./index.html">Home</a></li>
-        <li role="menuitem"><a href="./meettheteam.html">Meet The Team</a></li>
-        <li role="menuitem">
-          <a href="./tripinformation.html">Trip Information</a>
-        </li>
-        <li role="menuitem"><a href="./gallery.html">Gallery</a></li>
-        <li role="menuitem"><a href="./contactus.html">Contact Us</a></li>
-        <li class="hidden-element" role="menuitem">
-          <a href="./book.html">Book Now</a>
-        </li>
-        <button class="book" role="menuitem">
-          <a href="./book.html">Book Now</a>
-        </button>
-      </ul>
-      <img
-        class="menu"
-        onclick="myFunction()"
-        src="./resources/icons8-menu-50.png"
-        width="45px"
-        height="45px"
-        alt="menu icon"
-      />
+      <nav aria-label="Main navigation">
+        <ul id="dropdown" role="menubar">
+          <li role="none"><a href="./index.html" role="menuitem">Home</a></li>
+          <li role="none">
+            <a href="./meettheteam.html" role="menuitem">Meet The Team</a>
+          </li>
+          <li role="none">
+            <a href="./tripinformation.html" role="menuitem"
+              >Trip Information</a
+            >
+          </li>
+          <li role="none">
+            <a href="./gallery.html" role="menuitem">Gallery</a>
+          </li>
+          <li role="none">
+            <a href="./contactus.html" role="menuitem">Contact Us</a>
+          </li>
+          <li class="hidden-element" role="none">
+            <a href="./book.html" role="menuitem">Book Now</a>
+          </li>
+          <li role="none">
+            <button class="book" aria-label="Book Now">
+              <a href="./book.html">Book Now</a>
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <button class="menu" onclick="myFunction()" aria-label="Open menu">
+        <img
+          src="./resources/icons8-menu-50.png"
+          width="45px"
+          height="45px"
+          alt="Menu icon"
+        />
+      </button>
     </header>
     <main class="gallery" role="main">
       <h1>Gallery</h1>
@@ -76,17 +95,42 @@
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen
+            aria-label="YouTube video: Are you a West Coaster?"
           ></iframe>
         </div>
         <div class="photos">
-          <img src="./resources/atlanticGrey4.jpg" />
-          <img src="./resources/eider2.jpg" />
-          <img src="./resources/GoldenEagle.jpg" />
-          <img src="./resources/common seal7.jpg" />
-          <img src="./resources/atlanticGrey4.jpg" />
-          <img src="./resources/eider2.jpg" />
-          <img src="./resources/GoldenEagle.jpg" />
-          <img src="./resources/common seal7.jpg" />
+          <img
+            src="./resources/atlanticGrey4.jpg"
+            alt="Atlantic Grey Seal"
+            loading="lazy"
+          />
+          <img src="./resources/eider2.jpg" alt="Eider Duck" loading="lazy" />
+          <img
+            src="./resources/GoldenEagle.jpg"
+            alt="Golden Eagle"
+            loading="lazy"
+          />
+          <img
+            src="./resources/common seal7.jpg"
+            alt="Common Seal"
+            loading="lazy"
+          />
+          <img
+            src="./resources/atlanticGrey4.jpg"
+            alt="Atlantic Grey Seal"
+            loading="lazy"
+          />
+          <img src="./resources/eider2.jpg" alt="Eider Duck" loading="lazy" />
+          <img
+            src="./resources/GoldenEagle.jpg"
+            alt="Golden Eagle"
+            loading="lazy"
+          />
+          <img
+            src="./resources/common seal7.jpg"
+            alt="Common Seal"
+            loading="lazy"
+          />
         </div>
       </div>
     </main>
@@ -95,16 +139,41 @@
         src="./resources/travellerchoice2022.jpg"
         width="60px"
         height="60px"
-        alt="travellers choice award picture"
+        alt="Travellers choice award picture"
+        loading="lazy"
       />
       <div
         class="footer-contact"
         role="complementary"
-        aria-label="contact us on"
+        aria-labelledby="contact-info"
       >
         <p>01445 712674 | 07565 941021</p>
         <p>skipper@glassbottomedboat.co.uk</p>
       </div>
     </footer>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Glass Bottomed Boat",
+        "description": "Explore our gallery of stunning wildlife and scenic photos from our Glass Bottomed Boat trips. Ideal for all ages and dog-friendly.",
+        "url": "https://www.glassbottomedboat.co.uk",
+        "telephone": "01445 712674",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Pier Road",
+          "addressLocality": "Gairloch",
+          "postalCode": "IV21 2BQ",
+          "addressCountry": "UK"
+        },
+        "image": "https://www.glassbottomedboat.co.uk/resources/travellerchoice2022.jpg",
+        "priceRange": "$$",
+        "openingHours": "Mo-Su 09:00-17:00",
+        "sameAs": [
+          "https://www.facebook.com/glassbottomedboat",
+          "https://www.instagram.com/glassbottomedboat"
+        ]
+      }
+    </script>
   </body>
 </html>

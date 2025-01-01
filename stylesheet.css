@@ -1,3 +1,19 @@
+/* Variables */
+:root {
+  --primary-color: #ff6000;
+  --secondary-color: #24376e;
+  --text-color: white;
+  --background-gradient: linear-gradient(
+    to bottom right,
+    #24376e 25%,
+    #ff6000 100%
+  );
+  --font-family-main: "Nunito Sans", sans-serif;
+  --font-family-oooh: "oooh_babyregular";
+  --font-family-bebas: "bebas_neueregular";
+}
+
+/* Font Faces */
 @font-face {
   font-family: "oooh_babyregular";
   src: url("./fonts/webfontkit-20241106-052432/ooohbaby-regular-webfont.woff2")
@@ -18,18 +34,17 @@
   font-style: normal;
 }
 
+/* Global Styles */
 * {
   box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
-  font-family: Nunito Sans;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family-main);
   font-size: 16px;
 }
 
-/*HEADER */
-
 body {
-  background: linear-gradient(to bottom right, #24376e 25%, #ff6000 100%);
+  background: var(--background-gradient);
   background-repeat: no-repeat;
 }
 
@@ -41,20 +56,20 @@ body {
     "griditem griditem griditem"
     "information information information"
     "foot foot foot";
-
   grid-template-columns: 4% 92% 4%;
 }
 
+/* Header */
 header {
   grid-area: header;
   height: 100px;
-  color: white;
+  color: var(--text-color);
 }
 
 header ul {
   display: flex;
-  justify-content: right;
-  padding: 10px 0px;
+  justify-content: flex-end;
+  padding: 10px 0;
 }
 
 header li {
@@ -65,12 +80,12 @@ header li {
 }
 
 header li a {
-  color: white;
+  color: var(--text-color);
   text-decoration: none;
 }
 
-header li a:hover {
-  color: #ff6000;
+header li a:focus {
+  color: var(--primary-color);
 }
 
 .hidden-element {
@@ -79,7 +94,7 @@ header li a:hover {
 
 header .book,
 .blog-card button {
-  background-color: #ff6000;
+  background-color: var(--primary-color);
   border-radius: 10px;
   box-shadow: 2px 3px;
   height: 35px;
@@ -90,7 +105,7 @@ header .book,
 header .book a,
 header li a,
 .blog-card button a {
-  color: white;
+  color: var(--text-color);
   text-decoration: none;
 }
 
@@ -98,11 +113,13 @@ header li a,
   display: none;
   float: right;
   margin: 15px 40px;
+  color: none;
 }
 
+/* Hero Section */
 .hero {
   grid-area: hero;
-  background-image: url("./resources/common\ seal7.jpg");
+  background-image: url("./resources/common seal7.jpg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: auto;
@@ -125,14 +142,14 @@ header li a,
 }
 
 .type1 {
-  font-family: oooh_babyregular;
+  font-family: var(--font-family-oooh);
   font-size: 48px;
   color: rgba(255, 255, 255, 1);
   margin-top: 30px;
 }
 
 .type2 {
-  font-family: bebas_neueregular;
+  font-family: var(--font-family-bebas);
   font-size: 64px;
   color: rgba(255, 255, 255, 1);
 }
@@ -144,23 +161,25 @@ header li a,
 
 .hero-bubbles {
   position: absolute;
-  bottom: 0%;
-  right: 0%;
+  bottom: 0;
+  right: 0;
 }
 
+/* Grid Item */
 .griditem {
   grid-area: griditem;
   grid-column: 2 / 3;
   text-align: center;
-  padding: 20px 0px;
+  padding: 20px 0;
 }
 
 .griditem h1 {
   font-size: 48px;
-  font-family: bebas_neueregular;
+  font-family: var(--font-family-bebas);
   letter-spacing: 2px;
 }
 
+/* Information Section */
 .information {
   grid-area: information;
   height: auto;
@@ -180,7 +199,7 @@ header li a,
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 30px 8% 30px 8%;
+  padding: 30px 8%;
   margin: 10px auto;
   background-color: white;
 }
@@ -197,7 +216,7 @@ header li a,
 
 .hero-book-now,
 .index-information-box .book-now {
-  background-color: #ff6000;
+  background-color: var(--primary-color);
   border-radius: 10px;
   box-shadow: 2px 3px;
   height: 35px;
@@ -210,16 +229,33 @@ header li a,
 
 .hero-book-now a,
 .index-information-box .book-now a {
-  color: white;
+  color: var(--text-color);
   text-decoration: none;
 }
 
+/* Footer */
 .foot {
   grid-area: foot;
 }
 
-/* MEET THE TEAM PAGE */
+footer {
+  color: var(--text-color);
+  height: 100px;
+  padding: 25px;
+}
 
+.footer-contact p {
+  display: flex;
+  justify-content: center;
+}
+
+footer img {
+  position: absolute;
+  display: block;
+  right: 2%;
+}
+
+/* Meet the Team Page */
 .meet-team h1,
 .gallery h1,
 .trip-information h1,
@@ -228,7 +264,7 @@ header li a,
   text-align: left;
   font-size: 32px;
   margin-left: 10px;
-  color: white;
+  color: var(--text-color);
   padding: 10px;
   text-transform: uppercase;
 }
@@ -268,7 +304,7 @@ header li a,
 .person-card h2 {
   font-size: 36px;
   padding: 10px;
-  font-family: oooh_babyregular;
+  font-family: var(--font-family-oooh);
   color: black;
 }
 
@@ -280,7 +316,7 @@ header li a,
 .blog-section {
   width: 500px;
   height: auto;
-  background-color: #24376e;
+  background-color: var(--secondary-color);
   border-radius: 20px;
   display: flex;
   flex-direction: column;
@@ -293,17 +329,16 @@ header li a,
 .blog-card {
   height: auto;
   border-top: 6px solid #b4bca1;
-
   padding: 20px 20px;
 }
 
 .blog-title {
-  color: white;
+  color: var(--text-color);
   width: 100%;
 }
 
 .blog-title h2 {
-  font-family: bebas_neueregular;
+  font-family: var(--font-family-bebas);
   font-size: 36px;
   letter-spacing: 1px;
   padding: 20px;
@@ -312,11 +347,11 @@ header li a,
 .blog-card h3,
 .blog-card p,
 .blog-card a {
-  color: white;
+  color: var(--text-color);
 }
 
 .blog-title p {
-  padding: 0px 0px 10px 20px;
+  padding: 0 0 10px 20px;
 }
 
 .blog-card h3 {
@@ -339,11 +374,10 @@ header li a,
 }
 
 .blog-card button {
-  margin-right: 0px;
+  margin-right: 0;
 }
 
-/* GALLERY */
-
+/* Gallery */
 .collection {
   display: flex;
   align-items: center;
@@ -385,18 +419,17 @@ header li a,
   margin: 20px;
 }
 
-/* TRIP INFORMATION */
-
+/* Trip Information */
 .at-a-glance {
   height: auto;
   background: none;
-  margin: 20px 50px 20px 50px;
+  margin: 20px 50px;
   border-radius: 20px;
 }
 
 .glance-header {
   padding: 10px;
-  color: white;
+  color: var(--text-color);
   width: 100%;
   height: auto;
   border-bottom: 3px solid #b4bca1;
@@ -405,7 +438,7 @@ header li a,
 
 .glance-header h2,
 .glance-two h2 {
-  font-family: bebas_neueregular;
+  font-family: var(--font-family-bebas);
   font-size: 36px;
 }
 
@@ -431,7 +464,7 @@ header li a,
 
 .glance-two {
   width: 80%;
-  color: white;
+  color: var(--text-color);
   padding: 40px;
   position: relative;
 }
@@ -443,13 +476,12 @@ header li a,
 
 .glance-two-mini-head {
   position: relative;
-  margin: 30px 0px;
+  margin: 30px 0;
 }
 
 .supplementary-wrapper {
   height: auto;
-
-  margin: 20px 50px 20px 50px;
+  margin: 20px 50px;
   display: flex;
   justify-content: space-around;
   flex-wrap: nowrap;
@@ -467,7 +499,7 @@ header li a,
 .supplementary-wrapper button {
   width: 100%;
   height: 60px;
-  margin: 5px 0px;
+  margin: 5px 0;
   box-shadow: 3px 5px;
   border-radius: 20px;
   background-color: #ececec;
@@ -484,7 +516,7 @@ header li a,
   height: 200px;
   padding: 20px;
   border-radius: 20px;
-  margin: 10px 0px;
+  margin: 10px 0;
 }
 
 .supplementary-wrapper h1 {
@@ -511,12 +543,12 @@ header li a,
   max-width: 500px;
   max-height: 500px;
 }
-/* CONTACT PAGE */
 
+/* Contact Page */
 .contact-us h2 {
   margin-left: 20px;
   font-size: 18px;
-  color: white;
+  color: var(--text-color);
 }
 
 .contact-wrapper {
@@ -526,14 +558,14 @@ header li a,
 }
 
 .text-wrap {
-  color: white;
+  color: var(--text-color);
   text-align: center;
   padding: 20px;
 }
 
 .text-wrap h2 {
   font-size: 36px;
-  font-family: bebas_neueregular;
+  font-family: var(--font-family-bebas);
   letter-spacing: 2px;
 }
 
@@ -556,7 +588,7 @@ header li a,
 .form-box label {
   font-weight: bold;
   font-size: 20px;
-  color: white;
+  color: var(--text-color);
 }
 
 form {
@@ -584,8 +616,8 @@ form {
 }
 
 .form-box form .submit {
-  background-color: #ff6000;
-  color: white;
+  background-color: var(--primary-color);
+  color: var(--text-color);
   width: 300px;
   height: 40px;
   border-radius: 20px;
@@ -594,7 +626,7 @@ form {
 
 .address-box {
   max-width: 500px;
-  background-color: #24376e;
+  background-color: var(--secondary-color);
   position: relative;
   display: flex;
   justify-content: center;
@@ -603,12 +635,11 @@ form {
 
 .address-box img {
   position: absolute;
-  bottom: 0%;
+  bottom: 0;
 }
 
 .bokunContainer {
   display: flex;
-
   margin: 20px;
 }
 
@@ -622,10 +653,9 @@ form {
   border: 1px solid black;
 }
 
-/* FOOTER */
-
+/* Footer */
 footer {
-  color: white;
+  color: var(--text-color);
   height: 100px;
   padding: 25px;
 }
@@ -641,8 +671,14 @@ footer img {
   right: 2%;
 }
 
-/* REACTIVE CONDITIONS */
+/* Focus Styles */
+a:focus,
+button:focus {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
 
+/* Media Queries */
 @media only screen and (max-width: 650px) {
   header button,
   header ul,
@@ -687,7 +723,7 @@ footer img {
   }
   .person-card img {
     float: none;
-    margin: 0px;
+    margin: 0;
   }
 
   .photos img {
@@ -713,7 +749,7 @@ footer img {
 
   .at-a-glance,
   .address-box img {
-    margin: 0px;
+    margin: 0;
   }
 
   .glance-two {
@@ -731,7 +767,7 @@ footer img {
   }
 
   .supplementary-wrapper {
-    margin: 0px;
+    margin: 0;
   }
 }
 
@@ -772,7 +808,7 @@ footer img {
 
   .blog-card {
     margin: 10px 30px;
-    background-color: #24376e;
+    background-color: var(--secondary-color);
     color: black;
     border-top: none;
     box-shadow: 3px 5px;
@@ -812,4 +848,35 @@ footer img {
   .glance-two img {
     display: none;
   }
+}
+
+.test-div {
+  width: 500px;
+  height: auto;
+  background-color: #24376e;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+  margin-left: 800px;
+  overflow: hidden;
+  padding: 20px;
+}
+
+.testingDiv {
+  height: auto;
+  border-top: 6px solid #b4bca1;
+  padding: 20px 20px;
+  color: white;
+}
+
+.testingDate {
+  font-size: 12px;
+  padding-bottom: 10px;
+}
+
+.testingHeading {
+  font-size: 24px;
+  padding: 10px 0px;
 }

@@ -21,87 +21,105 @@
             src="./resources/icons8-phone-50.png"
             height="25px"
             width="25px"
-            alt="phone icon"
-            aria-label="Phone us"
-            role="presentation"
+            alt="Phone icon"
+            aria-hidden="true"
           />
         </li>
-        <li>01445 712674 | 07565 941021</li>
+        <li aria-label="Phone numbers">01445 712674 | 07565 941021</li>
         <li>
           <img
             src="./resources/icons8-email-48.png"
             height="25px"
             width="25px"
-            alt="email icon"
-            aria-label="email us"
-            role="presentation"
+            alt="Email icon"
+            aria-hidden="true"
           />
         </li>
-        <li>skipper@glassbottomedboat.co.uk</li>
+        <li aria-label="Email address">skipper@glassbottomedboat.co.uk</li>
       </ul>
-      <ul id="dropdown" role="menubar">
-        <li role="menuitem"><a href="./index.html">Home</a></li>
-        <li role="menuitem"><a href="./meettheteam.html">Meet The Team</a></li>
-        <li role="menuitem">
-          <a href="./tripinformation.html">Trip Information</a>
-        </li>
-        <li role="menuitem"><a href="./gallery.html">Gallery</a></li>
-        <li role="menuitem"><a href="./contactus.html">Contact Us</a></li>
-        <li class="hidden-element" role="menuitem">
-          <a href="./book.html">Book Now</a>
-        </li>
-        <button class="book" role="menuitem">
-          <a href="./book.html">Book Now</a>
-        </button>
-      </ul>
-      <img
-        class="menu"
-        onclick="myFunction()"
-        src="./resources/icons8-menu-50.png"
-        width="45px"
-        height="45px"
-        alt="menu icon"
-      />
+      <nav aria-label="Main navigation">
+        <ul id="dropdown" role="menubar">
+          <li role="none"><a href="./index.html" role="menuitem">Home</a></li>
+          <li role="none">
+            <a href="./meettheteam.html" role="menuitem">Meet The Team</a>
+          </li>
+          <li role="none">
+            <a href="./tripinformation.html" role="menuitem"
+              >Trip Information</a
+            >
+          </li>
+          <li role="none">
+            <a href="./gallery.html" role="menuitem">Gallery</a>
+          </li>
+          <li role="none">
+            <a href="./contactus.html" role="menuitem">Contact Us</a>
+          </li>
+          <li class="hidden-element" role="none">
+            <a href="./book.html" role="menuitem">Book Now</a>
+          </li>
+          <li role="none">
+            <button class="book" aria-label="Book Now">
+              <a href="./book.html">Book Now</a>
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <button class="menu" onclick="myFunction()" aria-label="Open menu">
+        <img
+          src="./resources/icons8-menu-50.png"
+          width="45px"
+          height="45px"
+          alt="Menu icon"
+        />
+      </button>
     </header>
     <main class="contact-us" role="main">
       <h1>Contact Us</h1>
       <h2>Get in touch with any questions</h2>
       <section class="contact-wrapper">
         <div class="form-box temp">
-          <form action="#" method="POST" role="form" aria-label="Contact form">
+          <form
+            action="#"
+            method="POST"
+            role="form"
+            aria-labelledby="contact-form-title"
+          >
+            <h3 id="contact-form-title">Contact Form</h3>
             <label for="name">Name:</label><br />
             <input
               class="enter"
               type="text"
               id="name"
               name="name"
-              placeholder="name"
+              placeholder="Name"
               required
               aria-required="true"
+              autocomplete="name"
             /><br />
             <label for="email">Email Address:</label><br />
             <input
               class="enter"
-              type="text"
+              type="email"
               id="email"
               name="email"
-              placeholder="example.hotmail.co.uk"
+              placeholder="example@hotmail.co.uk"
               required
               aria-required="true"
+              autocomplete="email"
             /><br />
-            <label id="alignment" for="phone">Phone Number:</label><br />
+            <label for="phone">Phone Number:</label><br />
             <input
               class="enter"
-              type="text"
+              type="tel"
               id="phone"
               name="phone"
               placeholder="+44"
               required
               aria-required="true"
+              autocomplete="tel"
             /><br />
             <label for="message">Message:</label><br />
             <textarea
-              type="text"
               id="message"
               name="message"
               rows="8"
@@ -109,25 +127,27 @@
               placeholder="Type in your message"
               required
               aria-required="true"
-            >
-            </textarea
-            ><br />
-            <br />
+              autocomplete="off"
+            ></textarea
+            ><br /><br />
             <input class="submit" type="submit" value="Submit" />
           </form>
         </div>
         <div class="address-box temp">
           <div class="text-wrap" role="presentation">
             <h2>Alternatively</h2>
-            <br />
             <h3>Call Us</h3>
             <p>01445 712674 | 07565 941021</p>
-            <br />
             <h3>Address</h3>
             <p>The Little Grey Hut, Pier Road, Gairloch, IV21 2BQ</p>
           </div>
-
-          <img src="./resources/Vector Shed.png" width="500px" height="auto" />
+          <img
+            src="./resources/Vector Shed.png"
+            width="500px"
+            height="auto"
+            alt="The Little Grey Hut"
+            loading="lazy"
+          />
         </div>
       </section>
     </main>
@@ -136,13 +156,10 @@
         src="./resources/travellerchoice2022.jpg"
         width="60px"
         height="60px"
-        alt="travellers choice award picture"
+        alt="Travellers choice award picture"
+        loading="lazy"
       />
-      <div
-        class="footer-contact"
-        role="complementary"
-        aria-label="contact us on"
-      >
+      <div class="footer-contact" role="complementary" aria-label="Contact us">
         <p>01445 712674 | 07565 941021</p>
         <p>skipper@glassbottomedboat.co.uk</p>
       </div>

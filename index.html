@@ -3,6 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Experience your own underwater adventure on our 90-minute Glass Bottomed Boat trips. Ideal for all ages and dog-friendly."
+    />
+    <meta
+      name="keywords"
+      content="Glass Bottomed Boat, boat trips, underwater adventure, family-friendly, dog-friendly"
+    />
+    <meta name="author" content="Glass Bottomed Boat" />
     <link href="stylesheet.css" type="text/css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -21,50 +30,60 @@
             src="./resources/icons8-phone-50.png"
             height="25px"
             width="25px"
-            alt="phone icon"
-            aria-label="Phone us"
-            role="presentation"
+            alt="Phone icon"
+            aria-hidden="true"
           />
         </li>
-        <li>01445 712674 | 07565 941021</li>
+        <li aria-label="Phone numbers">01445 712674 | 07565 941021</li>
         <li>
           <img
             src="./resources/icons8-email-48.png"
             height="25px"
             width="25px"
-            alt="email icon"
-            aria-label="email us"
-            role="presentation"
+            alt="Email icon"
+            aria-hidden="true"
           />
         </li>
-        <li>skipper@glassbottomedboat.co.uk</li>
+        <li aria-label="Email address">skipper@glassbottomedboat.co.uk</li>
       </ul>
-      <ul id="dropdown" role="menubar">
-        <li role="menuitem"><a href="./index.html">Home</a></li>
-        <li role="menuitem"><a href="./meettheteam.html">Meet The Team</a></li>
-        <li role="menuitem">
-          <a href="./tripinformation.html">Trip Information</a>
-        </li>
-        <li role="menuitem"><a href="./gallery.html">Gallery</a></li>
-        <li role="menuitem"><a href="./contactus.html">Contact Us</a></li>
-        <li class="hidden-element" role="menuitem">
-          <a href="./book.html">Book Now</a>
-        </li>
-        <button class="book" role="menuitem">
-          <a href="./book.html">Book Now</a>
-        </button>
-      </ul>
-      <img
-        class="menu"
-        onclick="myFunction()"
-        src="./resources/icons8-menu-50.png"
-        width="45px"
-        height="45px"
-        alt="menu icon"
-      />
+      <nav aria-label="Main navigation">
+        <ul id="dropdown" role="menubar">
+          <li role="none"><a href="./index.html" role="menuitem">Home</a></li>
+          <li role="none">
+            <a href="./meettheteam.html" role="menuitem">Meet The Team</a>
+          </li>
+          <li role="none">
+            <a href="./tripinformation.html" role="menuitem"
+              >Trip Information</a
+            >
+          </li>
+          <li role="none">
+            <a href="./gallery.html" role="menuitem">Gallery</a>
+          </li>
+          <li role="none">
+            <a href="./contactus.html" role="menuitem">Contact Us</a>
+          </li>
+          <li class="hidden-element" role="none">
+            <a href="./book.html" role="menuitem">Book Now</a>
+          </li>
+          <li role="none">
+            <button class="book" aria-label="Book Now">
+              <a href="./book.html">Book Now</a>
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <button class="menu" onclick="myFunction()" aria-label="Open menu">
+        <img
+          src="./resources/icons8-menu-50.png"
+          width="45px"
+          height="45px"
+          alt="Menu icon"
+        />
+      </button>
     </header>
-    <div class="hero" role="main">
-      <div class="hero-overlay-box" role="presentation">
+    <main class="hero" role="main">
+      <div class="hero-overlay-box">
         <p class="type1 box">All Aboard The</p>
         <p class="type2 box">GLASS</p>
         <p class="type2 box">BOTTOMED</p>
@@ -72,7 +91,7 @@
         <p class="type3 box">
           Experience your own under water adventure on our 90 minute boat trips
         </p>
-        <button class="hero-book-now box">
+        <button class="hero-book-now box" aria-label="Trip Information">
           <a href="./tripinformation.html">Trip Information</a>
         </button>
       </div>
@@ -81,85 +100,98 @@
         src="./resources/Assets/bubbles.png"
         width="350px"
         height="350px"
-        alt="quick facts of our boat trips, ideal for all ages, £30 per person, dog friendly"
+        alt="Quick facts of our boat trips, ideal for all ages, £30 per person, dog friendly"
+        loading="lazy"
       />
-    </div>
+    </main>
 
-    <div class="griditem">
+    <section class="griditem">
       <h1>Experience your own Wildlife Adventure</h1>
-    </div>
-    <div
-      class="information"
-      role="complementary"
-      aria-details="About our trips"
-    >
+    </section>
+    <aside class="information" aria-labelledby="trip-info">
       <div class="index-information-box">
-        <ul role="presentation">
+        <ul>
           <li>
             <img
               src="./resources/icons8-right-arrow-24.png"
-              alt="bullet point"
-              role="presentation"
+              alt="Bullet point"
             />
             Daily 90 Minute boat Trips
           </li>
           <li>
             <img
               src="./resources/icons8-right-arrow-24.png"
-              alt="bullet point"
-              role="presentation"
+              alt="Bullet point"
             />
             Dog Friendly
           </li>
           <li>
             <img
               src="./resources/icons8-right-arrow-24.png"
-              alt="bullet point"
-              role="presentation"
+              alt="Bullet point"
             />
             £30 per person
           </li>
           <li>
             <img
               src="./resources/icons8-right-arrow-24.png"
-              alt="bullet point"
-              role="presentation"
+              alt="Bullet point"
             />
             Ideal for all ages
           </li>
           <li>
             <img
               src="./resources/icons8-right-arrow-24.png"
-              alt="bullet point"
-              role="presentation"
+              alt="Bullet point"
             />
             View
             <a class="extra" href="./tripinformation.html">Trip Information</a>
           </li>
           <li>
-            <button class="book-now" id="boxid">
+            <button class="book-now" id="boxid" aria-label="Book Now">
               <a href="./book.html">Book Now</a>
             </button>
           </li>
         </ul>
       </div>
-    </div>
+    </aside>
 
     <footer class="foot" role="contentinfo">
       <img
         src="./resources/travellerchoice2022.jpg"
         width="60px"
         height="60px"
-        alt="travellers choice award picture"
+        alt="Travellers choice award picture"
+        loading="lazy"
       />
-      <div
-        class="footer-contact"
-        role="complementary"
-        aria-label="contact us on"
-      >
+      <div class="footer-contact" aria-labelledby="contact-info">
         <p>01445 712674 | 07565 941021</p>
         <p>skipper@glassbottomedboat.co.uk</p>
       </div>
     </footer>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Glass Bottomed Boat",
+        "description": "Experience your own underwater adventure on our 90-minute Glass Bottomed Boat trips. Ideal for all ages and dog-friendly.",
+        "url": "https://www.glassbottomedboat.co.uk",
+        "telephone": "01445 712674",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Pier Road",
+          "addressLocality": "Gairloch",
+          "postalCode": "IV21 2BQ",
+          "addressCountry": "UK"
+        },
+        "image": "https://www.glassbottomedboat.co.uk/resources/travellerchoice2022.jpg",
+        "priceRange": "$$",
+        "openingHours": "Mo-Su 09:00-17:00",
+        "sameAs": [
+          "https://www.facebook.com/glassbottomedboat",
+          "https://www.instagram.com/glassbottomedboat"
+        ]
+      }
+    </script>
   </body>
 </html>
