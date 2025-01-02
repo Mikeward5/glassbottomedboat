@@ -8,6 +8,8 @@ let buttonFour = document.getElementById("button4");
 let menuFour = document.getElementById("menu4");
 let buttonFive = document.getElementById("button5");
 let menuFive = document.getElementById("menu5");
+let buttonsix = document.getElementById("button6");
+let menusix = document.getElementById("menu6");
 
 function openMenuOne() {
   if (menu1.style.display === "block") {
@@ -49,8 +51,17 @@ function openMenuFive() {
   }
 }
 
+function openMenuSix() {
+  if (menu6.style.display === "block") {
+    menu6.style.display = "none";
+  } else {
+    menu6.style.display = "block";
+  }
+}
+
 buttonOne.addEventListener("click", openMenuOne);
 buttonTwo.addEventListener("click", openMenuTwo);
 buttonThree.addEventListener("click", openMenuThree);
 buttonFour.addEventListener("click", openMenuFour);
 buttonFive.addEventListener("click", openMenuFive);
+buttonsix.addEventListener("click", openMenuSix);

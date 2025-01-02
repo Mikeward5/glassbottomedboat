@@ -511,11 +511,12 @@ footer img {
 #menu2,
 #menu3,
 #menu4,
-#menu5 {
+#menu5,
+#menu6 {
   display: none;
   width: 100%;
   background-color: #ececec;
-  height: 200px;
+  height: auto;
   padding: 20px;
   border-radius: 20px;
   margin: 10px 0;
@@ -652,7 +653,11 @@ form {
 
 .side {
   width: 90%;
-  border: 1px solid black;
+  padding: 40px;
+}
+
+.side p {
+  color: white;
 }
 
 /* Footer */
@@ -766,6 +771,7 @@ button:focus {
 
   .button-wrapper {
     width: 95%;
+    margin-bottom: 30px;
   }
 
   .supplementary-wrapper {
