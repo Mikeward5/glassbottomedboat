@@ -64,14 +64,15 @@
           </li>
         </ul>
       </nav>
-      <button class="menu" onclick="myFunction()" aria-label="Open menu">
-        <img
-          src="./resources/icons8-menu-50.png"
-          width="45px"
-          height="45px"
-          alt="Menu icon"
-        />
-      </button>
+      <img
+        class="menu"
+        onclick="myFunction()"
+        src="./resources/icons8-menu-50.png"
+        width="45px"
+        height="45px"
+        alt="menu icon"
+        aria-label="Open menu"
+      />
     </header>
     <main class="contact-us" role="main">
       <h1>Contact Us</h1>
@@ -79,12 +80,11 @@
       <section class="contact-wrapper">
         <div class="form-box temp">
           <form
-            action="#"
+            action="send_email.php"
             method="POST"
             role="form"
             aria-labelledby="contact-form-title"
           >
-            <h3 id="contact-form-title">Contact Form</h3>
             <label for="name">Name:</label><br />
             <input
               class="enter"

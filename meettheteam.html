@@ -20,6 +20,7 @@
       rel="stylesheet"
     />
     <script src="button.js" defer></script>
+    <script src="blog.js" defer></script>
     <title>Glass Bottomed Boat Meet The Team</title>
   </head>
   <body>
@@ -73,14 +74,15 @@
           </li>
         </ul>
       </nav>
-      <button class="menu" onclick="myFunction()" aria-label="Open menu">
-        <img
-          src="./resources/icons8-menu-50.png"
-          width="45px"
-          height="45px"
-          alt="Menu icon"
-        />
-      </button>
+      <img
+        class="menu"
+        onclick="myFunction()"
+        src="./resources/icons8-menu-50.png"
+        width="45px"
+        height="45px"
+        alt="menu icon"
+        aria-label="Open menu"
+      />
     </header>
     <main class="meet-team" role="main">
       <h1>Meet The Team</h1>
@@ -157,58 +159,10 @@
             </p>
           </article>
         </div>
-        <div class="blog-section">
-          <div class="blog-title" id="title-blog">
-            <h2>About Alice</h2>
-            <p>All the latest News</p>
-          </div>
-          <article class="blog-card data-set">
-            <h3>Thank you to Everyone</h3>
-            <p class="date">Sept 2024</p>
-            <p>
-              Alice, the glass bottomed boat, is out on hardstanding undergoing
-              repairs to be ready for the 2025 season. We wish all of our
-              customers, both past and present, and those we’ve not had the
-              pleasure to meet yet, a very Merry Christmas and a Happy New Year.
-              From all of the team here in Gairloch Michael, Julie and Steve.
-            </p>
-            <a href="#" aria-label="Read more about Alice">READ MORE</a>
-          </article>
-          <article class="blog-card data-set">
-            <h3>Kraken has been Spotted</h3>
-            <p class="date">June 2024</p>
-            <p>
-              Skipper Mike unfortunately diagnosed with stupidity syndrome. He
-              is now the only person we know that has been bitten by an Octopus
-              in Gairloch. "It was like the kraken," he said!
-            </p>
-            <a href="#" aria-label="Read more about the Kraken">READ MORE</a>
-          </article>
-          <article class="blog-card data-set">
-            <h3>He's gone and Crashed</h3>
-            <p class="date">May 2024</p>
-            <p>
-              Unfortunately Mike has crashed and hereby has been given the
-              nickname Captain Pugwash! The boat only travels at 4 knots; how
-              can a person at that speed crash?
-            </p>
-            <a href="#" aria-label="Read more about the crash">READ MORE</a>
-          </article>
-          <article class="blog-card data-set">
-            <h3>Welcome Mike</h3>
-            <p class="date">April 2024</p>
-            <p>
-              Mike has now joined the business. Originally from Warwickshire, he
-              has moved with his family to Aultbea recently and will be acting
-              as our Relief-Skipper. We all wish Mike good luck in his new role.
-            </p>
-            <a href="#" aria-label="Read more about Mike joining">READ MORE</a>
-          </article>
-          <div class="blog-card" id="see-blog-button">
-            <button aria-label="Go to our blog">
-              <a href="#">Go To our Blog</a>
-            </button>
-          </div>
+
+        <div class="blog-div">
+          <h2 class="blogHead">About Alice</h2>
+          <p class="blogHead">All the latest News</p>
         </div>
       </section>
     </main>
@@ -229,29 +183,5 @@
         <p>skipper@glassbottomedboat.co.uk</p>
       </div>
     </footer>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "LocalBusiness",
-        "name": "Glass Bottomed Boat",
-        "description": "Meet the team behind the Glass Bottomed Boat. Learn about our crew and their roles in making your trip unforgettable.",
-        "url": "https://www.glassbottomedboat.co.uk",
-        "telephone": "01445 712674",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Pier Road",
-          "addressLocality": "Gairloch",
-          "postalCode": "IV21 2BQ",
-          "addressCountry": "UK"
-        },
-        "image": "https://www.glassbottomedboat.co.uk/resources/travellerchoice2022.jpg",
-        "priceRange": "$$",
-        "openingHours": "Mo-Su 09:00-17:00",
-        "sameAs": [
-          "https://www.facebook.com/glassbottomedboat",
-          "https://www.instagram.com/glassbottomedboat"
-        ]
-      }
-    </script>
   </body>
 </html>
