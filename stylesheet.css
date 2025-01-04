@@ -554,17 +554,6 @@ footer img {
 }
 
 /* Contact Page */
-.contact-us h2 {
-  margin-left: 20px;
-  font-size: 1.125rem; /* 18px */
-  color: var(--text-color);
-}
-
-.contact-wrapper {
-  display: flex;
-  justify-content: space-around;
-  margin-bottom: 20px;
-}
 
 .text-wrap {
   color: var(--text-color);
@@ -588,7 +577,6 @@ footer img {
 }
 
 .form-box {
-  width: 60%;
   padding: 20px;
   display: flex;
   align-items: center;
@@ -601,8 +589,7 @@ footer img {
 }
 
 form {
-  max-width: 500px;
-  min-width: 200px;
+  width: 100%;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -649,21 +636,47 @@ form {
 
 .bokunContainer {
   display: flex;
-  margin: 20px;
+  width: 90%;
+  justify-content: space-around;
+  margin: 0 auto;
+  flex-wrap: wrap;
 }
 
 .bokunWidget {
-  min-width: 400px;
-  border: 1px solid black;
+  padding: 20px;
+  width: 400px;
+  margin-right: 20px;
+  flex: 0 0 400px; /* Prevent resizing */
 }
 
 .side {
-  width: 90%;
+  display: flex;
+  flex-direction: column;
   padding: 2.5rem; /* 40px */
+  width: 550px;
+  margin: 0 auto;
+  flex: 0 0 550px; /* Prevent resizing */
 }
 
 .side p {
   color: white;
+}
+
+.TA_selfserveprop {
+  margin-top: 50px;
+}
+
+.contact-wrapper {
+  min-width: 300px;
+  max-width: 600px;
+  margin-left: auto; /* Align to the right */
+}
+
+.contact-wrapper h2,
+.contact-wrapper h1 {
+  font-size: 1.7rem; /* 18px */
+  color: var(--text-color);
+  text-align: center;
 }
 
 /* Footer */
@@ -866,12 +879,39 @@ button:focus {
 
   .team-blog-section {
     flex-direction: column;
-    align-items: center;
+    justify-content: center;
     width: 100%;
   }
 
   .person-card {
     width: 90%;
+  }
+
+  .bokunContainer {
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+  }
+
+  .bokunWidget {
+    width: 100%;
+    padding: 0px;
+  }
+
+  .side {
+    width: 100%;
+  }
+
+  .TA_selfserveprop {
+    display: none;
+  }
+
+  .contact-wrapper {
+    width: 90%;
+    min-width: 100px;
+    margin-left: 0;
+    margin-top: 20px;
+    border: 1px solid black;
   }
 
   .person-card img {
@@ -915,5 +955,17 @@ button:focus {
   .logo,
   .glance-two img {
     display: none;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .bokunContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-wrapper {
+    margin-left: 0;
+    margin-top: 20px;
   }
 }

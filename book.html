@@ -24,7 +24,12 @@
       type="text/javascript"
       src="https://widgets.bokun.io/assets/javascripts/apps/build/BokunWidgetsLoader.js?bookingChannelUUID=7b95bc52-a8c1-4743-b410-22687041637c"
       defer
+    ></script>
+    <script
       async
+      src="https://www.jscache.com/wejs?wtype=selfserveprop&uniq=508&locationId=2343572&lang=en_UK&rating=true&nreviews=4&writereviewlink=false&popIdx=false&iswide=true&border=false&display_version=2"
+      data-loadtrk
+      onload="this.loadtrk=true"
     ></script>
     <title>Glass Bottomed Boat Booking</title>
   </head>
@@ -93,19 +98,19 @@
       <h1>Booking Page</h1>
       <div class="bokunContainer">
         <div
-          class="bokunWidget"
+          class="bokunWidget flexiblebox"
           data-src="https://widgets.bokun.io/online-sales/7b95bc52-a8c1-4743-b410-22687041637c/experience-calendar/174392"
         ></div>
         <noscript>Please enable JavaScript in your browser to book</noscript>
-        <div class="side">
+        <div class="side flexiblebox">
           <p>
-            Disclaimer. Trips may be cancelled due to unforseen weather or
+            Disclaimer. Trips may be cancelled due to unforeseen weather or
             circumstance. We will refund fully those trips or offer an
-            alernative trip to attend.
+            alternative trip to attend.
           </p>
           <br />
           <p>
-            If you need to cancel your trip, as long as you give us at leats 24
+            If you need to cancel your trip, as long as you give us at least 24
             hours notice, you will receive a full refund of monies paid. In
             extreme circumstances this refund may be made available within that
             timeframe at the discretion of the staff at the Glass Bottomed Boat.
@@ -114,10 +119,79 @@
           <p>
             No refund will be given if the trip is already in motion and you
             have just arrived too late. If you are unsure, and that you may
-            arrive too late, please ring us immeadiately, we will do our best to
+            arrive too late, please ring us immediately, we will do our best to
             help.
           </p>
+          <div id="TA_selfserveprop508" class="TA_selfserveprop">
+            <ul id="2rzxBaChrJ" class="TA_links iozsTE6">
+              <li id="aKlprnkDYT0" class="bVFNmB7zKzLd">
+                <a target="_blank" href="https://www.tripadvisor.co.uk/"
+                  ><img
+                    src="https://www.tripadvisor.co.uk/img/cdsi/img2/branding/150_logo-11900-2.png"
+                    alt="TripAdvisor"
+                /></a>
+              </li>
+            </ul>
+          </div>
         </div>
+        <section class="contact-wrapper flexiblebox">
+          <h1>Contact Us</h1>
+          <div class="form-box temp">
+            <form
+              action="send_email.php"
+              method="POST"
+              role="form"
+              aria-labelledby="contact-form-title"
+            >
+              <label for="name">Name:</label><br />
+              <input
+                class="enter"
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Name"
+                required
+                aria-required="true"
+                autocomplete="name"
+              /><br />
+              <label for="email">Email Address:</label><br />
+              <input
+                class="enter"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="example@hotmail.co.uk"
+                required
+                aria-required="true"
+                autocomplete="email"
+              /><br />
+              <label for="phone">Phone Number:</label><br />
+              <input
+                class="enter"
+                type="tel"
+                id="phone"
+                name="phone"
+                placeholder="+44"
+                required
+                aria-required="true"
+                autocomplete="tel"
+              /><br />
+              <label for="message">Message:</label><br />
+              <textarea
+                id="message"
+                name="message"
+                rows="8"
+                cols="57"
+                placeholder="Type in your message"
+                required
+                aria-required="true"
+                autocomplete="off"
+              ></textarea
+              ><br /><br />
+              <input class="submit" type="submit" value="Submit" />
+            </form>
+          </div>
+        </section>
       </div>
     </main>
     <footer class="foot" role="contentinfo">
