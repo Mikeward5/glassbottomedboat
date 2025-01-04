@@ -404,15 +404,15 @@ footer img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  margin: 30px 80px;
+  margin: 30px 30px;
 }
 
 .photos img {
-  width: 400px;
-  height: 400px;
+  width: 200px;
+  height: 200px;
   -o-object-fit: cover;
   object-fit: cover;
-  margin: 20px;
+  margin: 10px;
 }
 
 /* Trip Information */
@@ -434,7 +434,7 @@ footer img {
 
 .glance-header h2,
 .glance-two h2 {
-  font-family: var(--font-family-bebas);
+  font-family: var(--font-family-main);
   font-size: 36px;
 }
 
@@ -442,6 +442,7 @@ footer img {
   display: flex;
   position: relative;
   height: auto;
+  border-bottom: 3px solid #b4bca1;
 }
 
 .glance-box {
@@ -461,8 +462,9 @@ footer img {
 .glance-two {
   width: 80%;
   color: var(--text-color);
-  padding: 40px;
+  padding: 40px 40px 40px 70px;
   position: relative;
+  text-align: center;
 }
 
 .glance-two img {
@@ -473,6 +475,11 @@ footer img {
 .glance-two-mini-head {
   position: relative;
   margin: 30px 0;
+}
+
+.glance-two-mini-head h3 {
+  font-size: 1.7rem;
+  text-align: center;
 }
 
 .supplementary-wrapper {
@@ -507,12 +514,7 @@ footer img {
   background-color: #ececec;
 }
 
-#menu1,
-#menu2,
-#menu3,
-#menu4,
-#menu5,
-#menu6 {
+.menufaq {
   display: none;
   width: 100%;
   background-color: #ececec;
@@ -520,6 +522,10 @@ footer img {
   padding: 20px;
   border-radius: 20px;
   margin: 10px 0;
+}
+
+.buttonfaq {
+  padding: 0px 10px;
 }
 
 .supplementary-wrapper h2 {
@@ -696,6 +702,34 @@ button:focus {
     display: none;
   }
 
+  .hero-overlay-box {
+    width: 250px;
+    height: 380px;
+    margin-left: 0;
+  }
+
+  .type1 {
+    font-family: var(--font-family-oooh);
+    font-size: 2rem;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 30px;
+  }
+
+  .type2 {
+    font-family: var(--font-family-bebas);
+    font-size: 2.5rem;
+    color: rgba(255, 255, 255, 1);
+  }
+
+  .type3 {
+    color: rgba(255, 255, 255, 1);
+    font-size: 1rem;
+  }
+
+  .box {
+    width: 200px;
+  }
+
   header {
     height: 80px;
     margin: 0;
@@ -719,7 +753,7 @@ button:focus {
 
   .index-information-box li,
   .index-information-box li .extra {
-    font-size: 18px;
+    font-size: 16px;
   }
 
   .person-card {
@@ -734,9 +768,8 @@ button:focus {
   }
 
   .photos img {
-    justify-content: center;
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
   }
 
   .glance-box {
@@ -752,6 +785,7 @@ button:focus {
     flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
+    border-bottom: none;
   }
 
   .at-a-glance,
@@ -776,6 +810,37 @@ button:focus {
 
   .supplementary-wrapper {
     margin: 0;
+  }
+
+  .meet-team h1,
+  .trip-information h1,
+  .gallery h1,
+  .contact-us h1,
+  .bokunBook h1 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .griditem h1 {
+    font-size: 2rem;
+  }
+
+  .glance-header h2,
+  .glance-two h2 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .glance-header p {
+    text-align: center;
+  }
+
+  .glance-header h2 {
+    display: none;
+  }
+
+  .glance-two-mini-head h3 {
+    font-size: 1.3rem;
   }
 }
 
@@ -803,6 +868,15 @@ button:focus {
     flex-direction: column;
     align-items: center;
     width: 100%;
+  }
+
+  .person-card {
+    width: 90%;
+  }
+
+  .person-card img {
+    width: 200px;
+    height: 200px;
   }
 
   .supplementary-wrapper {
