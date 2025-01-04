@@ -831,6 +831,10 @@ button:focus {
   .bokunWidget {
     min-width: 300px;
   }
+
+  .blog-div {
+    width: 90%;
+  }
 }
 
 @media only screen and (max-width: 1300px) {
