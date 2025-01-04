@@ -143,20 +143,20 @@ header li a,
 
 .type1 {
   font-family: var(--font-family-oooh);
-  font-size: 48px;
+  font-size: 3rem; /* 48px */
   color: rgba(255, 255, 255, 1);
   margin-top: 30px;
 }
 
 .type2 {
   font-family: var(--font-family-bebas);
-  font-size: 64px;
+  font-size: 4rem; /* 64px */
   color: rgba(255, 255, 255, 1);
 }
 
 .type3 {
   color: rgba(255, 255, 255, 1);
-  font-size: 24px;
+  font-size: 1.5rem; /* 24px */
 }
 
 .hero-bubbles {
@@ -174,7 +174,7 @@ header li a,
 }
 
 .griditem h1 {
-  font-size: 48px;
+  font-size: 3rem; /* 48px */
   font-family: var(--font-family-bebas);
   letter-spacing: 2px;
 }
@@ -210,8 +210,8 @@ header li a,
 
 .index-information-box li,
 .index-information-box li .extra {
-  font-size: 24px;
-  line-height: 40px;
+  font-size: 1.5rem; /* 24px */
+  line-height: 2.5rem; /* 40px */
 }
 
 .hero-book-now,
@@ -262,7 +262,7 @@ footer img {
 .contact-us h1,
 .bokunBook h1 {
   text-align: left;
-  font-size: 32px;
+  font-size: 2rem; /* 32px */
   margin-left: 10px;
   color: var(--text-color);
   padding: 10px;
@@ -302,7 +302,7 @@ footer img {
 }
 
 .person-card h2 {
-  font-size: 36px;
+  font-size: 2.25rem; /* 36px */
   padding: 10px;
   font-family: var(--font-family-oooh);
   color: black;
@@ -335,18 +335,18 @@ footer img {
 }
 
 .blogEntryDate {
-  font-size: 12px;
+  font-size: 0.75rem; /* 12px */
   padding-bottom: 10px;
 }
 
 .blogEntryHeading {
-  font-size: 24px;
+  font-size: 1.5rem; /* 24px */
   padding: 10px 0px;
 }
 
 .blog-div h2 {
   font-family: var(--font-family-bebas);
-  font-size: 36px;
+  font-size: 2.25rem; /* 36px */
   letter-spacing: 1px;
 }
 
@@ -425,7 +425,7 @@ footer img {
 
 .glance-header {
   padding: 10px;
-  color: var(--text-color);
+  color: var (--text-color);
   width: 100%;
   height: auto;
   border-bottom: 3px solid #b4bca1;
@@ -435,7 +435,7 @@ footer img {
 .glance-header h2,
 .glance-two h2 {
   font-family: var(--font-family-main);
-  font-size: 36px;
+  font-size: 2.25rem; /* 36px */
 }
 
 .glance-wrapper {
@@ -502,12 +502,12 @@ footer img {
 
 .button-wrapper h2 {
   color: white;
-  font-size: 24px;
+  font-size: 1.5rem; /* 24px */
   padding: 10px;
 }
 .supplementary-wrapper button {
   width: 100%;
-  height: 60px;
+  height: 3.75rem; /* 60px */
   margin: 5px 0;
   box-shadow: 3px 5px;
   border-radius: 20px;
@@ -519,7 +519,7 @@ footer img {
   width: 100%;
   background-color: #ececec;
   height: auto;
-  padding: 20px;
+  padding: 1.25rem; /* 20px */
   border-radius: 20px;
   margin: 10px 0;
 }
@@ -556,7 +556,7 @@ footer img {
 /* Contact Page */
 .contact-us h2 {
   margin-left: 20px;
-  font-size: 18px;
+  font-size: 1.125rem; /* 18px */
   color: var(--text-color);
 }
 
@@ -573,13 +573,13 @@ footer img {
 }
 
 .text-wrap h2 {
-  font-size: 36px;
+  font-size: 2.25rem; /* 36px */
   font-family: var(--font-family-bebas);
-  letter-spacing: 2px;
+  letter-spacing: 0.125rem; /* 2px */
 }
 
 .text-wrap h3 {
-  font-size: 24px;
+  font-size: 1.5rem; /* 24px */
 }
 
 .temp {
@@ -596,7 +596,7 @@ footer img {
 
 .form-box label {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 1.25rem; /* 20px */
   color: var(--text-color);
 }
 
@@ -612,7 +612,7 @@ form {
 .form-box form .enter {
   border: 1px solid black;
   width: 100%;
-  height: 40px;
+  height: 2.5rem; /* 40px */
   border-radius: 20px;
   padding-left: 10px;
 }
@@ -627,8 +627,8 @@ form {
 .form-box form .submit {
   background-color: var(--primary-color);
   color: var(--text-color);
-  width: 300px;
-  height: 40px;
+  width: 18.75rem; /* 300px */
+  height: 2.5rem; /* 40px */
   border-radius: 20px;
   border: 1px solid black;
 }
@@ -659,7 +659,7 @@ form {
 
 .side {
   width: 90%;
-  padding: 40px;
+  padding: 2.5rem; /* 40px */
 }
 
 .side p {
@@ -703,8 +703,8 @@ button:focus {
   }
 
   .hero-overlay-box {
-    width: 250px;
-    height: 380px;
+    width: 15.625rem; /* 250px */
+    height: 23.75rem; /* 380px */
     margin-left: 0;
   }
 
@@ -717,13 +717,13 @@ button:focus {
 
   .type2 {
     font-family: var(--font-family-bebas);
-    font-size: 2.5rem;
+    font-size: 2.5rem; /* 40px */
     color: rgba(255, 255, 255, 1);
   }
 
   .type3 {
     color: rgba(255, 255, 255, 1);
-    font-size: 1rem;
+    font-size: 1rem; /* 16px */
   }
 
   .box {
@@ -753,7 +753,7 @@ button:focus {
 
   .index-information-box li,
   .index-information-box li .extra {
-    font-size: 16px;
+    font-size: 1rem; /* 16px */
   }
 
   .person-card {
@@ -768,8 +768,8 @@ button:focus {
   }
 
   .photos img {
-    width: 250px;
-    height: 250px;
+    width: 15.625rem; /* 250px */
+    height: 15.625rem; /* 250px */
   }
 
   .glance-box {
@@ -817,17 +817,17 @@ button:focus {
   .gallery h1,
   .contact-us h1,
   .bokunBook h1 {
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* 24px */
     text-align: center;
   }
 
   .griditem h1 {
-    font-size: 2rem;
+    font-size: 2rem; /* 32px */
   }
 
   .glance-header h2,
   .glance-two h2 {
-    font-size: 1.5rem;
+    font-size: 1.5rem; /* 24px */
     text-align: center;
   }
 
@@ -840,7 +840,7 @@ button:focus {
   }
 
   .glance-two-mini-head h3 {
-    font-size: 1.3rem;
+    font-size: 1.3rem; /* 20.8px */
   }
 }
 
@@ -875,8 +875,8 @@ button:focus {
   }
 
   .person-card img {
-    width: 200px;
-    height: 200px;
+    width: 12.5rem; /* 200px */
+    height: 12.5rem; /* 200px */
   }
 
   .supplementary-wrapper {
@@ -890,7 +890,7 @@ button:focus {
   }
 
   .address-box img {
-    width: 300px;
+    width: 18.75rem; /* 300px */
   }
 
   .address-box {
@@ -903,7 +903,7 @@ button:focus {
   }
 
   .bokunWidget {
-    min-width: 300px;
+    min-width: 18.75rem; /* 300px */
   }
 
   .blog-div {
