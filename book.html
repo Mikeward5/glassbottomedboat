@@ -35,28 +35,30 @@
   </head>
   <body>
     <header role="banner">
-      <ul role="presentation">
-        <li>
-          <img
-            src="./resources/icons8-phone-50.png"
-            height="25px"
-            width="25px"
-            alt="Phone icon"
-            aria-hidden="true"
-          />
-        </li>
-        <li aria-label="Phone numbers">01445 712674 | 07565 941021</li>
-        <li>
-          <img
-            src="./resources/icons8-email-48.png"
-            height="25px"
-            width="25px"
-            alt="Email icon"
-            aria-hidden="true"
-          />
-        </li>
-        <li aria-label="Email address">skipper@glassbottomedboat.co.uk</li>
-      </ul>
+      <nav aria-label="Contact information">
+        <ul role="presentation">
+          <li>
+            <img
+              src="./resources/icons8-phone-50.png"
+              height="25px"
+              width="25px"
+              alt="Phone icon"
+              aria-hidden="true"
+            />
+          </li>
+          <li aria-label="Phone numbers">01445 712674 | 07565 941021</li>
+          <li>
+            <img
+              src="./resources/icons8-email-48.png"
+              height="25px"
+              width="25px"
+              alt="Email icon"
+              aria-hidden="true"
+            />
+          </li>
+          <li aria-label="Email address">skipper@glassbottomedboat.co.uk</li>
+        </ul>
+      </nav>
       <nav aria-label="Main navigation">
         <ul id="dropdown" role="menubar">
           <li role="none"><a href="./index.html" role="menuitem">Home</a></li>
@@ -94,35 +96,38 @@
         aria-label="Open menu"
       />
     </header>
-    <main class="bokunBook" role="main">
-      <h1>Booking Page</h1>
-      <div class="bokunContainer">
-        <div
-          class="bokunWidget flexiblebox"
-          data-src="https://widgets.bokun.io/online-sales/7b95bc52-a8c1-4743-b410-22687041637c/experience-calendar/174392"
-        ></div>
-        <noscript>Please enable JavaScript in your browser to book</noscript>
-        <div class="side flexiblebox">
-          <p>
-            Disclaimer. Trips may be cancelled due to unforeseen weather or
-            circumstance. We will refund fully those trips or offer an
-            alternative trip to attend.
-          </p>
-          <br />
-          <p>
-            If you need to cancel your trip, as long as you give us at least 24
-            hours notice, you will receive a full refund of monies paid. In
-            extreme circumstances this refund may be made available within that
-            timeframe at the discretion of the staff at the Glass Bottomed Boat.
-          </p>
-          <br />
-          <p>
-            No refund will be given if the trip is already in motion and you
-            have just arrived too late. If you are unsure, and that you may
-            arrive too late, please ring us immediately, we will do our best to
-            help.
-          </p>
-          <div id="TA_selfserveprop508" class="TA_selfserveprop">
+    <h1 class="booking-h1">Booking Page</h1>
+    <main class="container-test" role="main">
+      <section class="flexible-container">
+        <article class="test-box">
+          <div
+            class="bokunWidget"
+            data-src="https://widgets.bokun.io/online-sales/7b95bc52-a8c1-4743-b410-22687041637c/experience-calendar/174392"
+          ></div>
+          <noscript>Please enable JavaScript in your browser to book</noscript>
+        </article>
+        <article class="test-box" id="flexible-test-box">
+          <div class="info-test">
+            <p>
+              Disclaimer. Trips may be cancelled due to unforeseen weather or
+              circumstance. We will refund fully those trips or offer an
+              alternative trip to attend.
+            </p>
+            <p>
+              If you need to cancel your trip, as long as you give us at least
+              24 hours notice, you will receive a full refund of monies paid. In
+              extreme circumstances this refund may be made available within
+              that timeframe at the discretion of the staff at the Glass
+              Bottomed Boat.
+            </p>
+            <p>
+              No refund will be given if the trip is already in motion and you
+              have just arrived too late. If you are unsure, and that you may
+              arrive too late, please ring us immediately, we will do our best
+              to help.
+            </p>
+          </div>
+          <div class="TA_selfserveprop" id="TA_selfserveprop508">
             <ul id="2rzxBaChrJ" class="TA_links iozsTE6">
               <li id="aKlprnkDYT0" class="bVFNmB7zKzLd">
                 <a target="_blank" href="https://www.tripadvisor.co.uk/"
@@ -133,66 +138,65 @@
               </li>
             </ul>
           </div>
+        </article>
+      </section>
+      <section class="contact-test">
+        <h2>Contact Us</h2>
+        <div class="form-box temp">
+          <form
+            action="send_email.php"
+            method="POST"
+            role="form"
+            aria-labelledby="contact-form-title"
+          >
+            <label for="name">Name:</label>
+            <input
+              class="enter"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Name"
+              required
+              aria-required="true"
+              autocomplete="name"
+            />
+            <label for="email">Email Address:</label>
+            <input
+              class="enter"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="example@hotmail.co.uk"
+              required
+              aria-required="true"
+              autocomplete="email"
+            />
+            <label for="phone">Phone Number:</label>
+            <input
+              class="enter"
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="+44"
+              required
+              aria-required="true"
+              autocomplete="tel"
+            />
+            <label for="message">Message:</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="8"
+              cols="57"
+              placeholder="Type in your message"
+              required
+              aria-required="true"
+              autocomplete="off"
+            ></textarea>
+            <input class="submit" type="submit" value="Submit" />
+          </form>
         </div>
-        <section class="contact-wrapper flexiblebox">
-          <h1>Contact Us</h1>
-          <div class="form-box temp">
-            <form
-              action="send_email.php"
-              method="POST"
-              role="form"
-              aria-labelledby="contact-form-title"
-            >
-              <label for="name">Name:</label><br />
-              <input
-                class="enter"
-                type="text"
-                id="name"
-                name="name"
-                placeholder="Name"
-                required
-                aria-required="true"
-                autocomplete="name"
-              /><br />
-              <label for="email">Email Address:</label><br />
-              <input
-                class="enter"
-                type="email"
-                id="email"
-                name="email"
-                placeholder="example@hotmail.co.uk"
-                required
-                aria-required="true"
-                autocomplete="email"
-              /><br />
-              <label for="phone">Phone Number:</label><br />
-              <input
-                class="enter"
-                type="tel"
-                id="phone"
-                name="phone"
-                placeholder="+44"
-                required
-                aria-required="true"
-                autocomplete="tel"
-              /><br />
-              <label for="message">Message:</label><br />
-              <textarea
-                id="message"
-                name="message"
-                rows="8"
-                cols="57"
-                placeholder="Type in your message"
-                required
-                aria-required="true"
-                autocomplete="off"
-              ></textarea
-              ><br /><br />
-              <input class="submit" type="submit" value="Submit" />
-            </form>
-          </div>
-        </section>
-      </div>
+      </section>
     </main>
     <footer class="foot" role="contentinfo">
       <img

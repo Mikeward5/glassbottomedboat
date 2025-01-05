@@ -571,15 +571,97 @@ footer img {
   font-size: 1.5rem; /* 24px */
 }
 
-.temp {
+.address-box {
+  max-width: 500px;
+  background-color: var(--secondary-color);
+  position: relative;
+  display: flex;
+  justify-content: center;
   height: 700px;
+}
+
+.address-box img {
+  position: absolute;
+  bottom: 0;
+}
+
+/* Footer */
+footer {
+  color: var(--text-color);
+  height: 100px;
+  padding: 25px;
+}
+
+.footer-contact p {
+  display: flex;
+  justify-content: center;
+}
+
+footer img {
+  position: absolute;
+  display: block;
+  right: 2%;
+}
+
+.container-test {
+  display: flex;
+  justify-content: space-between;
+}
+
+.booking-h1 {
+  font-size: 2rem;
+  color: white;
+  text-align: left;
+  margin: 20px;
+}
+
+.contact-test {
+  width: 100%;
+  height: auto;
+}
+
+.contact-test h2 {
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+}
+
+.flexible-container {
+  width: 1000px;
+  display: inline-flex;
+}
+
+#flexible-test-box {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  width: 500px;
+}
+
+.test-box {
+  width: 400px;
+  margin: 10px;
+  padding: 10px;
+}
+
+.info-test {
+  color: white;
+  text-align: center;
+}
+
+.TA_selfserveprop {
+  margin-top: 20px;
+  margin: 20px auto;
+}
+
+.temp {
+  height: auto;
   border-radius: 20px;
 }
 
 .form-box {
   padding: 20px;
   display: flex;
-  align-items: center;
 }
 
 .form-box label {
@@ -599,6 +681,8 @@ form {
 .form-box form .enter {
   border: 1px solid black;
   width: 100%;
+  min-width: 200px;
+  max-width: 300px;
   height: 2.5rem; /* 40px */
   border-radius: 20px;
   padding-left: 10px;
@@ -608,6 +692,8 @@ form {
   border: 1px solid black;
   border-radius: 20px;
   width: 100%;
+  min-width: 200px;
+  max-width: 300px;
   padding: 15px;
 }
 
@@ -615,86 +701,12 @@ form {
   background-color: var(--primary-color);
   color: var(--text-color);
   width: 18.75rem; /* 300px */
+  min-width: 200px;
+  max-width: 300px;
   height: 2.5rem; /* 40px */
   border-radius: 20px;
   border: 1px solid black;
-}
-
-.address-box {
-  max-width: 500px;
-  background-color: var(--secondary-color);
-  position: relative;
-  display: flex;
-  justify-content: center;
-  height: 700px;
-}
-
-.address-box img {
-  position: absolute;
-  bottom: 0;
-}
-
-.bokunContainer {
-  display: flex;
-  width: 90%;
-  justify-content: space-around;
-  margin: 0 auto;
-  flex-wrap: wrap;
-}
-
-.bokunWidget {
-  padding: 20px;
-  width: 400px;
-  margin-right: 20px;
-  flex: 0 0 400px; /* Prevent resizing */
-}
-
-.side {
-  display: flex;
-  flex-direction: column;
-  padding: 2.5rem; /* 40px */
-  width: 550px;
-  margin: 0 auto;
-  flex: 0 0 550px; /* Prevent resizing */
-}
-
-.side p {
-  color: white;
-}
-
-.TA_selfserveprop {
-  margin-top: 50px;
-}
-
-.contact-wrapper {
-  min-width: 300px;
-  max-width: 600px;
-  margin-left: auto; /* Align to the right */
-}
-
-.contact-wrapper h2,
-.contact-wrapper h1 {
-  font-size: 1.7rem; /* 18px */
-  color: var(--text-color);
-  text-align: center;
-}
-
-/* Footer */
-footer {
-  color: var(--text-color);
-  height: 100px;
-  padding: 25px;
-}
-
-.footer-contact p {
-  display: flex;
-  justify-content: center;
-}
-
-footer img {
-  position: absolute;
-  display: block;
-  right: 2%;
+  margin-top: 20px;
 }
 
 /* Focus Styles */
@@ -855,6 +867,10 @@ button:focus {
   .glance-two-mini-head h3 {
     font-size: 1.3rem; /* 20.8px */
   }
+
+  .bokunWidget {
+    width: 90%;
+  }
 }
 
 @media only screen and (max-width: 992px) {
@@ -873,10 +889,6 @@ button:focus {
     display: inline-block;
   }
 
-  .form-box {
-    width: 100%;
-  }
-
   .team-blog-section {
     flex-direction: column;
     justify-content: center;
@@ -885,33 +897,6 @@ button:focus {
 
   .person-card {
     width: 90%;
-  }
-
-  .bokunContainer {
-    flex-direction: column;
-    align-items: center;
-    width: 90%;
-  }
-
-  .bokunWidget {
-    width: 100%;
-    padding: 0px;
-  }
-
-  .side {
-    width: 100%;
-  }
-
-  .TA_selfserveprop {
-    display: none;
-  }
-
-  .contact-wrapper {
-    width: 90%;
-    min-width: 100px;
-    margin-left: 0;
-    margin-top: 20px;
-    border: 1px solid black;
   }
 
   .person-card img {
@@ -923,12 +908,6 @@ button:focus {
     flex-wrap: wrap;
   }
 
-  .contact-wrapper {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-
   .address-box img {
     width: 18.75rem; /* 300px */
   }
@@ -938,16 +917,53 @@ button:focus {
     margin-top: 20px;
   }
 
-  .bokunContainer {
+  .blog-div {
+    width: 90%;
+  }
+
+  .container-test {
     flex-direction: column;
+    align-items: center;
+  }
+
+  #flexible-test-box {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    align-items: center;
+    width: 100%;
+  }
+
+  .booking-h1 {
+    color: white;
+    font-size: 1.5rem; /* 24px */
+    margin: 10px;
+  }
+
+  .test-box {
+    width: auto;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .info-test {
+    width: 90%;
+    margin: 0px;
+    margin-top: 20px;
   }
 
   .bokunWidget {
-    min-width: 18.75rem; /* 300px */
+    width: 500px;
   }
 
-  .blog-div {
+  #TA_selfserveprop508 {
+    display: none;
+  }
+
+  .contact-test {
+    height: auto;
     width: 90%;
+    margin-top: 20px;
   }
 }
 
@@ -956,16 +972,16 @@ button:focus {
   .glance-two img {
     display: none;
   }
-}
 
-@media only screen and (max-width: 1200px) {
-  .bokunContainer {
+  .flexible-container {
     flex-direction: column;
     align-items: center;
+    width: auto;
   }
+}
 
-  .contact-wrapper {
-    margin-left: 0;
-    margin-top: 20px;
+@media only screen and (max-width: 650px) {
+  .bokunWidget {
+    width: 90%;
   }
 }
