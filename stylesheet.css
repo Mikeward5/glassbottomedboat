@@ -92,6 +92,13 @@ header li a:focus {
   display: none;
 }
 
+.logo1 {
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  z-index: 1;
+}
+
 header .book,
 .blog-card button {
   background-color: var(--primary-color);
@@ -133,7 +140,8 @@ header li a,
   width: 350px;
   height: 520px;
   background-color: rgba(0, 0, 0, 0.5);
-  margin-left: 6%;
+  margin-left: 13%;
+  margin-top: 90px;
 }
 
 .box {
@@ -176,7 +184,7 @@ header li a,
 .griditem h1 {
   font-size: 3rem; /* 48px */
   font-family: var(--font-family-bebas);
-  letter-spacing: 2px;
+  color: #b4bca1;
 }
 
 /* Information Section */
@@ -259,11 +267,11 @@ footer img {
 .meet-team h1,
 .gallery h1,
 .trip-information h1,
-.contact-us h1,
-.bokunBook h1 {
+.booking-h1 {
   text-align: left;
   font-size: 2rem; /* 32px */
   margin-left: 10px;
+  margin-top: 20px;
   color: var(--text-color);
   padding: 10px;
   text-transform: uppercase;
@@ -608,13 +616,6 @@ footer img {
   justify-content: space-between;
 }
 
-.booking-h1 {
-  font-size: 2rem;
-  color: white;
-  text-align: left;
-  margin: 20px;
-}
-
 .contact-test {
   width: 100%;
   height: auto;
@@ -662,6 +663,8 @@ footer img {
 .form-box {
   padding: 20px;
   display: flex;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .form-box label {
@@ -681,8 +684,8 @@ form {
 .form-box form .enter {
   border: 1px solid black;
   width: 100%;
-  min-width: 200px;
-  max-width: 300px;
+
+  max-width: 400px;
   height: 2.5rem; /* 40px */
   border-radius: 20px;
   padding-left: 10px;
@@ -692,8 +695,7 @@ form {
   border: 1px solid black;
   border-radius: 20px;
   width: 100%;
-  min-width: 200px;
-  max-width: 300px;
+  max-width: 400px;
   padding: 15px;
 }
 
@@ -720,10 +722,9 @@ button:focus {
 @media only screen and (max-width: 650px) {
   header button,
   header ul,
-  footer,
   .hero-bubbles,
-  .logo,
-  .special {
+  .special,
+  .foot img {
     display: none;
   }
 
@@ -868,8 +869,8 @@ button:focus {
     font-size: 1.3rem; /* 20.8px */
   }
 
-  .bokunWidget {
-    width: 90%;
+  .blog-div {
+    margin: 0 auto;
   }
 }
 
@@ -879,7 +880,6 @@ button:focus {
   }
 
   .book,
-  .logo,
   #see-blog-button,
   .hero-bubbles {
     display: none;
@@ -887,6 +887,10 @@ button:focus {
 
   .hidden-element {
     display: inline-block;
+  }
+
+  .hero-overlay-box {
+    margin: 0 auto;
   }
 
   .team-blog-section {
@@ -934,12 +938,6 @@ button:focus {
     width: 100%;
   }
 
-  .booking-h1 {
-    color: white;
-    font-size: 1.5rem; /* 24px */
-    margin: 10px;
-  }
-
   .test-box {
     width: auto;
     margin: 0px;
@@ -953,7 +951,14 @@ button:focus {
   }
 
   .bokunWidget {
-    width: 500px;
+    width: 100%;
+    margin: 0px;
+  }
+
+  .bokun-box {
+    width: 90%;
+    margin: 0px;
+    padding: 0px;
   }
 
   #TA_selfserveprop508 {
@@ -965,23 +970,26 @@ button:focus {
     width: 90%;
     margin-top: 20px;
   }
-}
 
-@media only screen and (max-width: 1300px) {
-  .logo,
-  .glance-two img {
+  .logo1 {
     display: none;
   }
 
+  .booking-h1 {
+    text-align: center;
+  }
+
+  .footer-contact p {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
   .flexible-container {
     flex-direction: column;
     align-items: center;
     width: auto;
-  }
-}
-
-@media only screen and (max-width: 650px) {
-  .bokunWidget {
-    width: 90%;
   }
 }

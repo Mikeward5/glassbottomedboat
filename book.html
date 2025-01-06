@@ -36,6 +36,14 @@
   <body>
     <header role="banner">
       <nav aria-label="Contact information">
+        <img
+          class="logo1"
+          src="./resources/logo updated.png"
+          width="100px"
+          height="100px"
+          alt="Logo"
+          loading="lazy"
+        />
         <ul role="presentation">
           <li>
             <img
@@ -73,9 +81,6 @@
           <li role="none">
             <a href="./gallery.html" role="menuitem">Gallery</a>
           </li>
-          <li role="none">
-            <a href="./contactus.html" role="menuitem">Contact Us</a>
-          </li>
           <li class="hidden-element" role="none">
             <a href="./book.html" role="menuitem">Book Now</a>
           </li>
@@ -99,7 +104,7 @@
     <h1 class="booking-h1">Booking Page</h1>
     <main class="container-test" role="main">
       <section class="flexible-container">
-        <article class="test-box">
+        <article class="test-box bokun-box">
           <div
             class="bokunWidget"
             data-src="https://widgets.bokun.io/online-sales/7b95bc52-a8c1-4743-b410-22687041637c/experience-calendar/174392"
@@ -160,6 +165,7 @@
               aria-required="true"
               autocomplete="name"
             />
+            <br />
             <label for="email">Email Address:</label>
             <input
               class="enter"
@@ -171,6 +177,7 @@
               aria-required="true"
               autocomplete="email"
             />
+            <br />
             <label for="phone">Phone Number:</label>
             <input
               class="enter"
@@ -182,6 +189,7 @@
               aria-required="true"
               autocomplete="tel"
             />
+            <br />
             <label for="message">Message:</label>
             <textarea
               id="message"
@@ -193,6 +201,7 @@
               aria-required="true"
               autocomplete="off"
             ></textarea>
+            <br />
             <input class="submit" type="submit" value="Submit" />
           </form>
         </div>
