@@ -416,7 +416,7 @@ footer img {
 }
 
 .photos img {
-  width: 200px;
+  width: auto;
   height: 200px;
   -o-object-fit: cover;
   object-fit: cover;
@@ -562,6 +562,20 @@ footer img {
 }
 
 /* Contact Page */
+
+.phone-box {
+  color: white;
+  text-align: center;
+  background-color: #24376e;
+  border-radius: 20px;
+  padding: 20px;
+  width: 400px;
+  margin: 0 auto;
+}
+
+.phone-box h3 {
+  font-size: 20px;
+}
 
 .text-wrap {
   color: var(--text-color);
@@ -794,8 +808,8 @@ button:focus {
   }
 
   .photos img {
-    width: 15.625rem; /* 250px */
-    height: 15.625rem; /* 250px */
+    width: auto /* 250px */;
+    height: 200px; /* 250px */
   }
 
   .glance-box {
@@ -826,6 +840,10 @@ button:focus {
 
   .address-box,
   .form-box form .submit {
+    width: 90%;
+  }
+
+  .phone-box {
     width: 90%;
   }
 
