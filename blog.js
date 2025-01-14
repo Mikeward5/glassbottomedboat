@@ -46,7 +46,7 @@ blogEntries.forEach((post) => {
   infoElement.textContent = post.info;
   postElement.appendChild(infoElement);
 
-  const buttonElement = document.createElement("button");
+  /*const buttonElement = document.createElement("button");
   buttonElement.classList.add("blogEntryButton");
 
   const linkElement = document.createElement("a");
@@ -56,6 +56,6 @@ blogEntries.forEach((post) => {
   buttonElement.appendChild(linkElement);
 
   postElement.appendChild(buttonElement);
-
+*/
   container.appendChild(postElement);
 });
