@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Book your 90-minute Glass Bottomed Boat trip. Ideal for all ages and dog-friendly."
+    />
+    <meta
+      name="keywords"
+      content="Glass Bottomed Boat, book trip, family-friendly, dog-friendly"
+    />
+    <meta name="author" content="Glass Bottomed Boat" />
+    <link href="stylesheet.css" type="text/css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <script src="button.js" defer></script>
+    <script
+      type="text/javascript"
+      src="https://widgets.bokun.io/assets/javascripts/apps/build/BokunWidgetsLoader.js?bookingChannelUUID=7b95bc52-a8c1-4743-b410-22687041637c"
+      defer
+    ></script>
+    <script
+      async
+      src="https://www.jscache.com/wejs?wtype=selfserveprop&uniq=508&locationId=2343572&lang=en_UK&rating=true&nreviews=4&writereviewlink=false&popIdx=false&iswide=true&border=false&display_version=2"
+      data-loadtrk
+      onload="this.loadtrk=true"
+    ></script>
+
+    <!-- Include reCAPTCHA v3 script -->
+    <script
+      src="https://www.google.com/recaptcha/api.js?render=6Lc3nbkqAAAAAKuD9WHUwpMRbjUcxJryFA-6aDa-"
+      async
+      defer
+    ></script>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        document
+          .getElementById("contactForm")
+          .addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent form from submitting immediately
+
+            // Execute reCAPTCHA and get the token
+            grecaptcha.ready(function () {
+              grecaptcha
+                .execute("6Lc3nbkqAAAAAKuD9WHUwpMRbjUcxJryFA-6aDa-", {
+                  action: "submit",
+                })
+                .then(function (token) {
+                  console.log(token); // Log the token to check if it's generated
+                  // Insert the token into the hidden field
+                  document.getElementById("recaptchaToken").value = token;
+
+                  // Now submit the form
+                  document.getElementById("contactForm").submit();
+                });
+            });
+          });
+      });
+    </script>
+
+    <title>Glass Bottomed Boat Booking</title>
+  </head>
+  <body>
+    <header role="banner">
+      <nav aria-label="Contact information">
+        <img
+          class="logo1"
+          src="./resources/logo updated.png"
+          width="100px"
+          height="100px"
+          alt="Logo"
+          loading="lazy"
+        />
+        <ul role="presentation">
+          <li>
+            <img
+              src="./resources/icons8-phone-50.png"
+              height="25px"
+              width="25px"
+              alt="Phone icon"
+              aria-hidden="true"
+            />
+          </li>
+          <li aria-label="Phone numbers">01445 712674 | 07565 941021</li>
+          <li>
+            <img
+              src="./resources/icons8-email-48.png"
+              height="25px"
+              width="25px"
+              alt="Email icon"
+              aria-hidden="true"
+            />
+          </li>
+          <li aria-label="Email address">skipper@glassbottomedboat.co.uk</li>
+        </ul>
+      </nav>
+      <nav aria-label="Main navigation">
+        <ul id="dropdown" role="menubar">
+          <li role="none"><a href="./index.html" role="menuitem">Home</a></li>
+          <li role="none">
+            <a href="./meettheteam.html" role="menuitem">Meet The Team</a>
+          </li>
+          <li role="none">
+            <a href="./tripinformation.html" role="menuitem"
+              >Trip Information</a
+            >
+          </li>
+          <li role="none">
+            <a href="./gallery.html" role="menuitem">Gallery</a>
+          </li>
+          <li class="hidden-element" role="none">
+            <a href="./book.html" role="menuitem">Book Now</a>
+          </li>
+          <li role="none">
+            <button class="book" aria-label="Book Now">
+              <a href="./book.html">Book Now</a>
+            </button>
+          </li>
+        </ul>
+      </nav>
+      <img
+        class="menu"
+        onclick="myFunction()"
+        src="./resources/icons8-menu-50.png"
+        width="45px"
+        height="45px"
+        alt="menu icon"
+        aria-label="Open menu"
+      />
+    </header>
+    <h1 class="booking-h1">Booking Page</h1>
+    <main class="container-test" role="main">
+      <section class="flexible-container">
+        <article class="test-box bokun-box">
+          <div
+            class="bokunWidget"
+            data-src="https://widgets.bokun.io/online-sales/7b95bc52-a8c1-4743-b410-22687041637c/experience-calendar/174392"
+          ></div>
+          <noscript>Please enable JavaScript in your browser to book</noscript>
+        </article>
+        <article class="test-box" id="flexible-test-box">
+          <div class="info-test">
+            <p>
+              Disclaimer. Trips may be cancelled due to unforeseen weather or
+              circumstance. We will refund fully those trips or offer an
+              alternative trip to attend.
+            </p>
+            <p>
+              If you need to cancel your trip, as long as you give us at least
+              24 hours notice, you will receive a full refund of monies paid. In
+              extreme circumstances this refund may be made available within
+              that timeframe at the discretion of the staff at the Glass
+              Bottomed Boat.
+            </p>
+            <p>
+              No refund will be given if the trip is already in motion and you
+              have just arrived too late. If you are unsure, and that you may
+              arrive too late, please ring us immediately, we will do our best
+              to help.
+            </p>
+          </div>
+          <div class="TA_selfserveprop" id="TA_selfserveprop508">
+            <ul id="2rzxBaChrJ" class="TA_links iozsTE6">
+              <li id="aKlprnkDYT0" class="bVFNmB7zKzLd">
+                <a target="_blank" href="https://www.tripadvisor.co.uk/"
+                  ><img
+                    src="https://www.tripadvisor.co.uk/img/cdsi/img2/branding/150_logo-11900-2.png"
+                    alt="TripAdvisor"
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </section>
+      <section class="contact-test">
+        <h2>Contact Us</h2>
+        <div class="phone-box">
+          <h3>Call Us</h3>
+          <p>01445 712674 | 07565 941021</p>
+          <h3>Address</h3>
+          <p>The Little Grey Hut, Pier Road, Gairloch, IV21 2BQ</p>
+        </div>
+        <div class="form-box temp">
+          <form
+            action="send_email.php"
+            method="POST"
+            role="form"
+            aria-labelledby="contact-form-title"
+            id="contactForm"
+          >
+            <label for="name">Name:</label>
+            <input
+              class="enter"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Name"
+              required
+              aria-required="true"
+              autocomplete="name"
+            />
+            <br />
+            <label for="email">Email Address:</label>
+            <input
+              class="enter"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="example@hotmail.co.uk"
+              required
+              aria-required="true"
+              autocomplete="email"
+            />
+            <br />
+            <label for="phone">Phone Number:</label>
+            <input
+              class="enter"
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="+44"
+              required
+              aria-required="true"
+              autocomplete="tel"
+            />
+            <br />
+            <label for="message">Message:</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="8"
+              cols="57"
+              placeholder="Type in your message"
+              required
+              aria-required="true"
+              autocomplete="off"
+            ></textarea>
+            <br />
+            <!-- Hidden reCAPTCHA Token Field -->
+            <input type="hidden" name="recaptcha_token" id="recaptchaToken" />
+            <input class="submit" type="submit" value="Submit" />
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="foot" role="contentinfo">
+      <img
+        src="./resources/travellerchoice2022.jpg"
+        width="60px"
+        height="60px"
+        alt="Travellers choice award picture"
+        loading="lazy"
+      />
+      <div
+        class="footer-contact"
+        role="complementary"
+        aria-labelledby="contact-info"
+      >
+        <p>01445 712674 | 07565 941021</p>
+        <p>skipper@glassbottomedboat.co.uk</p>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -129,7 +129,7 @@ header li a,
   background-image: url("./resources/common seal7.jpg");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: auto;
+  background-size: cover;
   height: 660px;
   position: relative;
   display: flex;
